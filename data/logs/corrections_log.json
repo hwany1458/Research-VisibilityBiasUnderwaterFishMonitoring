@@ -1,0 +1,3143 @@
+[
+ {
+  "ID": "S106",
+  "field": "V6",
+  "old": "P",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "Video quality varied across the three rivers despite using the same camera model, primarily due to different background set-up, lighting condition, water clarity",
+  "loc": "p.8 / Results, Dataset description",
+  "reason": "Per-river differences confound background, lighting, clarity and species; no visibility-class performance; low-light misses are qualitative and concern illumination. No explicit non-evaluation statement, so NR not N (rule 1)."
+ },
+ {
+  "ID": "S106",
+  "field": "E3",
+  "old": "없음",
+  "new": "점 보정",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "DISCount utilizes this variance information, along with statistical techniques such as control variates, to reweight the CV counts",
+  "loc": "p.7 / Reduce bias in run size estimate",
+  "reason": "Under rule 3 this is a sample-based correction of CV counts against human-verified counts, with no model of detection probability: point correction, not an observation model. E_ALL stays Y because PIT is an independent reference."
+ },
+ {
+  "ID": "S107",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "deployments with visibility below 10 m or depths exceeding 15 m were excluded.",
+  "loc": "p.9 / Sec. 2.4 Case study",
+  "reason": "The exclusion applies only to the ecological case study, not to the detector/tracker evaluation, and performance is never stratified by visibility, so V6=NR (rule 1; claim check agrees). V_ALL stays P (V1 other quant, V2 Y)."
+ },
+ {
+  "ID": "S107",
+  "field": "C5",
+  "old": "중복계수(ID switch) 처리",
+  "new": "둘 다",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "The tracker achieved an overall recall of 0.80 and a precision of 0.76 ... maintaining a relatively low rate of false positives",
+  "loc": "p.13 / Discussion; Table 3 p.11",
+  "reason": "Two mechanisms are present: sighting precision on 50 expert-annotated clips (verified FP rate), and the MaxN/temporal-clustering rule 'preventing double-counting of wandering individuals' (p.8). Each coder captured only one."
+ },
+ {
+  "ID": "S010",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "Hard fish examples, due to blurry conditions, different distances/orientations, against coral or ocean floor backgrounds.",
+  "loc": "p.13 / Fig. 6",
+  "reason": "'Blurry' refers to image blur in sample images, not water clarity or turbidity. No water-clarity statement about the study's own data exists."
+ },
+ {
+  "ID": "S010",
+  "field": "V_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "Hard fish examples, due to blurry conditions, different distances/orientations, against coral or ocean floor backgrounds.",
+  "loc": "p.13 / Fig. 6",
+  "reason": "V1–V4 are all NR (no turbidity, depth, light source or distance statement) once the image-blur remark is not counted, so V_ALL = NR."
+ },
+ {
+  "ID": "S010",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "The previous experiments are evaluated on a “clear” dataset where all tested images are valid fish",
+  "loc": "p.20 / Sec. 4.3",
+  "reason": "'Clear' means no false detections, not clear water. With no explicit visibility statement, rule 1 gives NR."
+ },
+ {
+  "ID": "S010",
+  "field": "D3",
+  "old": "NR",
+  "new": "Y",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "fish images from the same trajectory sequence are not used during both training and testing",
+  "loc": "p.14 / Sec. 4.1",
+  "reason": "Cluster-based (trajectory) splitting counts as near-duplicate control under D3. The LLM's own note said D3=Y, but the record holds NR."
+ },
+ {
+  "ID": "S010",
+  "field": "C3",
+  "old": "기타",
+  "new": "없음",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "set a small threshold (i.e. 0.01) to reject all samples whose posterior probabilities are below the threshold",
+  "loc": "p.18 / Sec. 4.2",
+  "reason": "Under rule 2 a GMM posterior reject option is a reject mechanism (C4=Y), not an uncertainty output (C3)."
+ },
+ {
+  "ID": "U026",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "Owing to the shallow camera and coral depth, the scene is greatly affected by illumination variations",
+  "loc": "p.7 / Sec. 3",
+  "reason": "Not stratified by visibility, and no explicit statement of non-evaluation or restriction: NR (rule 1)."
+ },
+ {
+  "ID": "U026",
+  "field": "C1",
+  "old": "Y",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "Small clusters are defined as the clusters having fewer trajectories which can be identified by a threshold.",
+  "loc": "p.15 / Sec. 4.4",
+  "reason": "The only threshold is a cluster-cardinality cut-off (A% of median), which is post-processing and not a score threshold (rule 2)."
+ },
+ {
+  "ID": "U026",
+  "field": "C4",
+  "old": "Y",
+  "new": "N",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "All trajectories which belong to a small cluster are detected as outliers and removed for further analysis",
+  "loc": "p.15 / Sec. 4.4",
+  "reason": "The outlier removal is based on cluster size, not on a score-based reject/unknown output (rule 2). It belongs under C5 data cleaning, not C4."
+ },
+ {
+  "ID": "U026",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "1000 of the 3.6 million fish trajectories were manually examined",
+  "loc": "p.8 / Sec. 3",
+  "reason": "Under the unified rule, C5 without a reported score threshold gives P. The LLM's Y relied on treating the cluster threshold as C1."
+ },
+ {
+  "ID": "S067",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "the turbidity level during this period was variable between 1 and 105 NTU.",
+  "loc": "p.3 / Sec. 2.1",
+  "reason": "Performance is not stratified by NTU, and there is no explicit non-evaluation or restriction statement: NR (rule 1; claim check agrees)."
+ },
+ {
+  "ID": "S067",
+  "field": "C_ALL",
+  "old": "NR",
+  "new": "NA",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "resulting in a weakly labeled dataset with a binary label of fish present in the frame or no fish present.",
+  "loc": "p.3 / Sec. 2.1",
+  "reason": "The task is frame-level fish/no-fish classification evaluated by accuracy and AUC-ROC, with no score threshold: the codebook's NA (classification without a score threshold)."
+ },
+ {
+  "ID": "S049",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "This environment suffers from frequent low visibility",
+  "loc": "p.3 / Sec. 2.2",
+  "reason": "Not stratified, and no explicit non-evaluation statement: NR (rule 1)."
+ },
+ {
+  "ID": "S085",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "recorded at depths varying between 47 and 552 m",
+  "loc": "p.2 / Sec. 2",
+  "reason": "No visibility stratification and no explicit statement: NR (rule 1)."
+ },
+ {
+  "ID": "N049",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "experienced reduced detection accuracy ... in highly turbid conditions",
+  "loc": "p.10 / Discussion",
+  "reason": "The accuracy loss in turbid conditions is stated qualitatively, without a two-condition performance comparison and without an explicit statement: NR (rule 1)."
+ },
+ {
+  "ID": "S079",
+  "field": "C5",
+  "old": "중복계수(ID switch) 처리",
+  "new": "없음",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "we convert the total quantity of different fish species into the time-averaged frequency of being captured by the camera",
+  "loc": "p.16 / Sec. 3.2",
+  "reason": "Re-entry duplicates are acknowledged, but no mechanism controls them. The endpoint is redefined as occurrence frequency, which still counts repeated appearances."
+ },
+ {
+  "ID": "S079",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "In most cases, the confidence scores for the detected objects are consistently above 0.85",
+  "loc": "p.15 / Sec. 3.1",
+  "reason": "No score threshold (0.85 is a description of observed scores) and no FP or duplicate control, so NR."
+ },
+ {
+  "ID": "N002",
+  "field": "V6",
+  "old": "P",
+  "new": "N",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "An inclusion criterion of at least 10 meter visibility was imposed.",
+  "loc": "p.4 / Sec. IV-A",
+  "reason": "Performance is not given by visibility. The only condition remark is depth or wave lensing, which is not visibility. Data were explicitly restricted to >=10 m visibility, so N per clarification 1."
+ },
+ {
+  "ID": "N002",
+  "field": "V_ALL",
+  "old": "P",
+  "new": "N",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "An inclusion criterion of at least 10 meter visibility was imposed.",
+  "loc": "p.4 / Sec. IV-A",
+  "reason": "P1: imagery restricted to clear water (>=10 m) with no per-video visibility measurement or stratification, so N. This is consistent with N086/Q170/N092, which were coded N despite reported depth."
+ },
+ {
+  "ID": "S094",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "These levels represent five quantile ranges of turbidity, corresponding respectively to maximum values of 3, 6, 9, 12, and 15 NTU.",
+  "loc": "p.4 / Sec. 3.1",
+  "reason": "Fish counts are reported by NTU level, but detector performance (Table 1) is pooled. The authors make no statement that performance was not evaluated by visibility, so NR per clarification 1."
+ },
+ {
+  "ID": "S094",
+  "field": "E1",
+  "old": "개체수/밀도",
+  "new": "MaxN/MeanCount",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "Histogram of average fish counts across five turbidity levels",
+  "loc": "p.8 / Fig. 6",
+  "reason": "The endpoint is the mean detector count per image by turbidity level, i.e. a MeanCount-type index, not a density per area or volume."
+ },
+ {
+  "ID": "S094",
+  "field": "E5",
+  "old": "같은 영상의 사람 판독(MaxN 등)",
+  "new": "없음",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "To minimize annotation complexity, we did not consider factors such as fish size, species, or functional groups",
+  "loc": "p.4 / Sec. 3.1",
+  "reason": "Human labels are binary presence per image and validate detection only. The fish-count endpoint is never compared with manual counts. This follows the human's claim check correction. E_ALL stays P (E1 != none)."
+ },
+ {
+  "ID": "S088",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "captured at depths of 200–500 m",
+  "loc": "p.7 / Datasets",
+  "reason": "There is no statement about turbidity or clarity of the custom imagery. The 'murky waters' remarks refer to NPSNF/Brackish, and the lighting remark is illumination (V3), not visibility."
+ },
+ {
+  "ID": "S088",
+  "field": "D1",
+  "old": "영상(video)",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "These 221 videos are segmented into train, validation, and test splits in a 70-15-15 ratio based on the frequency of fish in a frame within each video.",
+  "loc": "p.9 / Fine-tuning dataset",
+  "reason": "Ambiguous: could be whole videos or frames within each video. Val and test frame counts are nearly identical (19,211 vs 19,210), which hints at frame-level splitting. Clarification 5 forbids Y without an unambiguous statement."
+ },
+ {
+  "ID": "S088",
+  "field": "D_ALL",
+  "old": "Y",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "The resulting train, validation, and test splits comprise 71 736; 19 211; and 19 210 frames with fish",
+  "loc": "p.9 / Fine-tuning dataset",
+  "reason": "Split unit not determinable, so NR (not Y). Low confidence; if the authors confirm video-level allocation, the value would be Y."
+ },
+ {
+  "ID": "R005",
+  "field": "C1",
+  "old": "Y",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "Figure 4 shows the experimental results (red line) of the threshold with the detection rate of 99% or more using the reference image.",
+  "loc": "p.7 / Sec. 3.1.2",
+  "reason": "This threshold is a brightness-difference threshold for non-learned background subtraction, not a model score threshold (clarification 2). The CNN classification uses no score threshold."
+ },
+ {
+  "ID": "R005",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "NA",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "the proposed method shows better performance in all CNNs",
+  "loc": "p.14 / Sec. 5.2",
+  "reason": "The AI task evaluated is classification of cropped images with no score threshold, so NA."
+ },
+ {
+  "ID": "N063",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "-",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility and no data restriction; V6 = NR, not N."
+ },
+ {
+  "ID": "N042",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "-",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility and no data restriction; V6 = NR, not N."
+ },
+ {
+  "ID": "S030",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "-",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility and no data restriction; V6 = NR, not N."
+ },
+ {
+  "ID": "S030",
+  "field": "C1",
+  "old": "Y",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "By setting a minimum threshold we can substantially improve the accuracy of the remaining predictions",
+  "loc": "p.5 / Results",
+  "reason": "Rule 2: headline results use the argmax softmax. No fixed score threshold is used for reported results; Fig. 5 only sweeps retention. C_ALL stays Y via C2."
+ },
+ {
+  "ID": "N046",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "Water clarity measured as the distance fish can be seen from each camera deployment",
+  "loc": "p.4 / Sec. 2.2",
+  "reason": "Clarity is measured but performance by clarity is not reported, and nothing says it was not done. Rule 1 gives NR (human claim check objection upheld). V_ALL stays P."
+ },
+ {
+  "ID": "N046",
+  "field": "C_ALL",
+  "old": "NR",
+  "new": "P",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "detections for these species were manually curated and checked",
+  "loc": "p.7 / Sec. 2.3",
+  "reason": "Unified C rule: false-positive control (manual curation of rare-species detections) without a threshold value gives P. The per-species thresholds are also justified."
+ },
+ {
+  "ID": "N054",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "Considering that the underwater images were generally turbid and only captured clear outlines when the fish were close to the camera",
+  "loc": "p.12 / Results",
+  "reason": "Turbidity is invoked only qualitatively to explain errors. There is no performance by visibility class and no explicit non-evaluation statement, so NR."
+ },
+ {
+  "ID": "N054",
+  "field": "C5",
+  "old": "중복계수(ID switch) 처리",
+  "new": "둘 다",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "Rframes was set to 2.5 for P. parva and 5 for C. carpio",
+  "loc": "p.7 / Sec. 2.6 (+p.6: 300 randomly sampled inference images checked against manual labels)",
+  "reason": "Duplicate counts are handled (division by Rframes), and FPs are verified on a random human-annotated sample of the operational dataset (precision 88.9%). Both apply; C_ALL stays Y with C1 = 0.427."
+ },
+ {
+  "ID": "N054",
+  "field": "E3",
+  "old": "없음",
+  "new": "점 보정",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "the corrected number of occurrences Noccurrences was calculated by compensating for undetected individuals",
+  "loc": "p.7 / Sec. 2.6, Eq. 6",
+  "reason": "Rule 3: counts are divided by recall without modelling detection probability, so point correction (resolves the undecided claim check). E_ALL stays P."
+ },
+ {
+  "ID": "S055",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "-",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility and no data restriction; V6 = NR, not N."
+ },
+ {
+  "ID": "S055",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "영상(video)",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "we post-processed two BRUV videos and 5 YouTube (YT) videos with the goal of locating, identifying, and classifying all sharks present",
+  "loc": "p.7 / Sec. 2.4",
+  "reason": "The in-situ headline results (Table 2) come from whole videos absent from training (SL: COCO; SI/SC: sharkPulse/Instagram). The 90/10 internal SI split is not the headline in-situ design."
+ },
+ {
+  "ID": "S055",
+  "field": "D_ALL",
+  "old": "P",
+  "new": "Y",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "we post-processed two BRUV videos and 5 YouTube (YT) videos",
+  "loc": "p.7 / Sec. 2.4",
+  "reason": "Train and test are unambiguously separated by video/source for the headline in-situ evaluation. Pixel-duplicate removal applied only to Instagram sets."
+ },
+ {
+  "ID": "N025",
+  "field": "V6",
+  "old": "Y",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "Images were binned at 1 m resolution between the seafloor and 10 m for testing purposes.",
+  "loc": "p.7 / Model testing (3) Altitude",
+  "reason": "Rule 1: camera-altitude bins are not a visibility measure (human claim check objection upheld). There is no explicit non-evaluation statement, so NR. V_ALL stays P."
+ },
+ {
+  "ID": "N025",
+  "field": "D1",
+  "old": "사이트/서식지",
+  "new": "영상(video)",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "Port images only were analysed for a further two AOS deployments (OP24 and OP32, Table 1) to act as an independent test dataset",
+  "loc": "p.2 / Methods",
+  "reason": "The hold-out unit is the AOS deployment (one tow's image sequence, i.e. a video-like unit), at different times and places. Either code gives Y."
+ },
+ {
+  "ID": "N075",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "Performance in extreme conditions like poor lighting, turbidity, or variable water clarity was not extensively tested",
+  "loc": "p.10 / Sec. 4 Limitations",
+  "reason": "The hedged wording ('not extensively') is not an explicit statement that visibility was not evaluated or that data were restricted (human claim check objection upheld)."
+ },
+ {
+  "ID": "N075",
+  "field": "V_ALL",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "Performance in extreme conditions like poor lighting, turbidity, or variable water clarity was not extensively tested",
+  "loc": "p.10 / Sec. 4 Limitations",
+  "reason": "No restriction to clear data and no statement that visibility was not measured, so not N. No V1-V4 for own data, so not P. Result: NR."
+ },
+ {
+  "ID": "S025",
+  "field": "V6",
+  "old": "P",
+  "new": "Y",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "the level of water turbidity does not relevantly affect the correlation between the observed and the recognised time series",
+  "loc": "p.4 / Results",
+  "reason": "Performance (observed-vs-automated correlation) is reported for each of four ordinal turbidity scores (0-3). That is more than two classes, so V6 = Y. V_ALL stays P because V1 is qualitative."
+ },
+ {
+  "ID": "S089",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "presence or absence of natural light and hard and soft substrates",
+  "loc": "p.7 / Discussion",
+  "reason": "The statement concerns light and substrate, not turbidity or water clarity. No visibility description of own imagery."
+ },
+ {
+  "ID": "S089",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "-",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility and no data restriction; V6 = NR, not N."
+ },
+ {
+  "ID": "S045",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "Reasons for false positives ... include mis-identification due to poor lighting or partial fish",
+  "loc": "p.10 / Discussion, Model limitations",
+  "reason": "LLM quote concerns illumination (V3), not turbidity/water clarity; no turbidity or visibility description of own imagery found."
+ },
+ {
+  "ID": "S045",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "—",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility, and no data restriction; V6 = NR."
+ },
+ {
+  "ID": "N045",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "the varying brightness caused by depleting battery power in the lighting",
+  "loc": "p.4 / Sec. II",
+  "reason": "Only illumination (low-lit, brightness) described; no turbidity/water-clarity statement for own imagery."
+ },
+ {
+  "ID": "N045",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "—",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility, and no data restriction; V6 = NR."
+ },
+ {
+  "ID": "S044",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "—",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility, and no data restriction; V6 = NR."
+ },
+ {
+  "ID": "R011",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "—",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility, and no data restriction; V6 = NR."
+ },
+ {
+  "ID": "R011",
+  "field": "E3",
+  "old": "없음",
+  "new": "점 보정",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "A correction factor38,42 (precision divided by recall) for each group was applied to calculate the final (i.e., corrected) concentrations",
+  "loc": "p.3 / Results",
+  "reason": "Rule 3: concentrations multiplied by precision/recall without modelling detection probability = point correction."
+ },
+ {
+  "ID": "Q178",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "—",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility, and no data restriction; V6 = NR."
+ },
+ {
+  "ID": "Q178",
+  "field": "D1",
+  "old": "영상(video)",
+  "new": "이미지/프레임 무작위",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "All sorting for both split types was done without accounting for sample location or station",
+  "loc": "p.4 / Sec. 2.4",
+  "reason": "Headline (abstract) results are validation F1 on the image-level expert split; the unseen-video test set is secondary."
+ },
+ {
+  "ID": "Q178",
+  "field": "D_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "This introduces a risk of data leakage because validation images may contain familiar individuals, backgrounds",
+  "loc": "p.7 / Sec. 4.2",
+  "reason": "Rule 5: headline split is image-level with leakage explicitly discussed -> P."
+ },
+ {
+  "ID": "S060",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "It is also robust to the light changes due to the day/",
+  "loc": "p.7 / Results Exp. 1",
+  "reason": "Results stratified by month and camera change, not by turbidity/visibility; day/night lighting only remarked. Rule 1 -> NR."
+ },
+ {
+  "ID": "S029",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "—",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility, and no data restriction; V6 = NR."
+ },
+ {
+  "ID": "U013",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "—",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility, and no data restriction; V6 = NR."
+ },
+ {
+  "ID": "S031",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "—",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility, and no data restriction; V6 = NR."
+ },
+ {
+  "ID": "S091",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "-",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility and no data restriction; V6 = NR, not N."
+ },
+ {
+  "ID": "S091",
+  "field": "C4",
+  "old": "Y",
+  "new": "N",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "Under evaluation conditions with IoU = 0.5 and confidence threshold (conf) = 0.4",
+  "loc": "p.6 / Sec. 2.4.2",
+  "reason": "Fixed detection cutoff only; no score-based reject/unknown/unsure output. 'Afish poly' is a trained class, not a reject option."
+ },
+ {
+  "ID": "S091",
+  "field": "C5",
+  "old": "없음",
+  "new": "중복계수(ID switch) 처리",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "Multi-Object Tracking (MOT) is essential for completing fish species counting tasks ... by maintaining consistent identities of individual fish across video frames",
+  "loc": "p.6 / Sec. 2.5",
+  "reason": "Counts come from DeepSORT track identities (chosen for 'reducing identity-switching issues', p.2); a stated mechanism against duplicate counting, as credited for track-based counting elsewhere."
+ },
+ {
+  "ID": "S091",
+  "field": "C_ALL",
+  "old": "N",
+  "new": "Y",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "confidence threshold (conf) = 0.4 ... the best fish detection method combined with DeepSort were then compared with those from DOVC and UVC",
+  "loc": "p.6-7 / Sec. 2.4.2, 3",
+  "reason": "Unified C rule: reported threshold (C1=Y) together with duplicate handling (C5) gives Y."
+ },
+ {
+  "ID": "N084",
+  "field": "V1",
+  "old": "기타 정량",
+  "new": "정성 서술만",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "Red light produces monochrome images, which can reduce object visibility and make it more difficult to recognise morphological features.",
+  "loc": "Sec. 4 Discussion (p.17-18); light measurement p.4 Sec. 2.2",
+  "reason": "V1 is a physical measure of turbidity/water clarity. Strobe spectra measured inside the imaging chamber are an illumination (V3) measure, not water clarity; own-imagery visibility is described only qualitatively."
+ },
+ {
+  "ID": "S012",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "-",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility and no data restriction; V6 = NR, not N."
+ },
+ {
+  "ID": "S047",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "-",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility and no data restriction; V6 = NR, not N."
+ },
+ {
+  "ID": "S047",
+  "field": "E3",
+  "old": "없음",
+  "new": "점 보정",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "Statistical correction equations were always applied last.",
+  "loc": "p.3 / Methods",
+  "reason": "A cubic polynomial correction is fitted to automated counts against manual counts without modelling detection probability. This is an empirical point correction (rule 3), not an observation model. E_ALL stays P."
+ },
+ {
+  "ID": "N043",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "-",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility and no data restriction; V6 = NR, not N."
+ },
+ {
+  "ID": "N091",
+  "field": "D1",
+  "old": "사전 정의 공개 split 사용",
+  "new": "이미지/프레임 무작위",
+  "source": "human-verification adjudication",
+  "winner": "human",
+  "quote": "A dataset built from underwater videos via frame extraction ... split into 70/15/15 for train/validation/test",
+  "loc": "p.2 / Sec. III.A",
+  "reason": "The local split is frame-level with no grouping. The DeepFish test set (909 images) comes from prior work [17] with no unit stated and is not the canonical DeepFish split. Both are image-level."
+ },
+ {
+  "ID": "N091",
+  "field": "D4",
+  "old": "N",
+  "new": "Y",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "expand the dataset and use video/location-based splits to avoid leakage",
+  "loc": "p.6 / Conclusion",
+  "reason": "Leakage from the frame-level split is explicitly acknowledged (briefly, as future work)."
+ },
+ {
+  "ID": "N091",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "P",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "expand the dataset and use video/location-based splits to avoid leakage",
+  "loc": "p.6 / Conclusion",
+  "reason": "D rule: random image/frame split with leakage discussed gives P. The LLM's own note also concluded P."
+ },
+ {
+  "ID": "N091",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "-",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility and no data restriction; V6 = NR, not N."
+ },
+ {
+  "ID": "S032",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "human-verification adjudication",
+  "winner": "neither",
+  "quote": "",
+  "loc": "-",
+  "reason": "Rule 1: no explicit statement that performance was not evaluated by visibility and no data restriction; V6 = NR, not N."
+ },
+ {
+  "ID": "S033",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S075",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S072",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N023",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N027",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S102",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q073",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S009",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q167",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N018",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S063",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N033",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S024",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S018",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "U019",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S056",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N048",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S081",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S073",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N034",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N088",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N071",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q176",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "U043",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N077",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N052",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N026",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N005",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N094",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q181",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N093",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S023",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N073",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N053",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q132",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q060",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N062",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S053",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N029",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q118",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "U014",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N079",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "U034",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N082",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S035",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S070",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N001",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q062",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S046",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N074",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "U033",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q091",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "R007",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q090",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q134",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N031",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q107",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N040",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N003",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N010",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q082",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N038",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N030",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N016",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S039",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N051",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N008",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q123",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S064",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S028",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N089",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N070",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q033",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q111",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S098",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N014",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S036",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q019",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q124",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S069",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q025",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N067",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N095",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N047",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q088",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N017",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S027",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "R012",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q162",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S058",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "R006",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N087",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q011",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S097",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "U030",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q113",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q129",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S043",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S020",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S051",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S095",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S034",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S059",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "U061",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S065",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N036",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q164",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N021",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S071",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q084",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q032",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q095",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N096",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N081",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "S103",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N050",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N085",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "Q061",
+  "field": "V6",
+  "old": "N",
+  "new": "NR",
+  "source": "rule clarification (V6 NR unless explicit)"
+ },
+ {
+  "ID": "N010",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "NA",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "listing all videos with their assigned class and classification confidence in the form of the softmax function",
+  "loc": "Sec. 4.1",
+  "reason": "Video-level binary classification only, no score threshold stated; unified C rule gives NA."
+ },
+ {
+  "ID": "N031",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Due to the optical characteristics of the underwater environment, some images in the dataset suffer from poor imaging quality.",
+  "loc": "Sec. 2.3",
+  "reason": "Generic image-quality remark, not about water clarity/turbidity/visibility of own imagery."
+ },
+ {
+  "ID": "N031",
+  "field": "V_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Due to the optical characteristics of the underwater environment, some images in the dataset suffer from poor imaging quality.",
+  "loc": "Sec. 2.3",
+  "reason": "V1 now NR and V2-V4 all NR -> V_ALL NR."
+ },
+ {
+  "ID": "N077",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "The dataset presents several challenges, including multiple fish per frame, poor lighting conditions, occlusions from other fish or underwater structures",
+  "loc": "Sec. III",
+  "reason": "Own-data statements concern lighting/occlusion only (V3); 'variable water clarity' appears only as generic intro challenge. V_ALL stays P (V2=Y)."
+ },
+ {
+  "ID": "Q032",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "the videos have varying light conditions (as they as taken during both day and night), many bubbles throughout the frames",
+  "loc": "Sec. III.A",
+  "reason": "Own-data remarks are light, bubbles, low sharpness/contrast; no water clarity/turbidity statement. V_ALL stays P (V3=Y)."
+ },
+ {
+  "ID": "S033",
+  "field": "C1",
+  "old": "Y",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Modellerin Farklı Eşik Değerlerine Göre İrdelenmesi",
+  "loc": "Sec. III.A; Tables II-III (Eşik Değerleri 0,10-0,90)",
+  "reason": "Threshold never defined as a score threshold; mAP swept across it, consistent with IoU threshold. Not C1."
+ },
+ {
+  "ID": "S033",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Modellerin Farklı Eşik Değerlerine Göre İrdelenmesi",
+  "loc": "Sec. III.A; Tables II-III (Eşik Değerleri 0,10-0,90)",
+  "reason": "With C1=NR and C2/C3 none, C5 none: no threshold and no FP control -> NR."
+ },
+ {
+  "ID": "N033",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "The databases used in this study contain extensive variations in background, lighting conditions, size, shape, contrast, edge sharpness",
+  "loc": "Sec. 5 Discussion",
+  "reason": "Generic lighting/contrast variation; no statement on water clarity/turbidity of own imagery found in full text."
+ },
+ {
+  "ID": "N033",
+  "field": "V_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "The databases used in this study contain extensive variations in background, lighting conditions, size, shape, contrast, edge sharpness",
+  "loc": "Sec. 5 Discussion",
+  "reason": "V1 now NR and V2-V4 all NR -> V_ALL NR."
+ },
+ {
+  "ID": "Q123",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Most of these images are bluish-green in color, characterized by low brightness, blurriness, and color distortion",
+  "loc": "Sec. IV-A",
+  "reason": "Brightness, blur and colour cast only; no water clarity/turbidity statement on own imagery."
+ },
+ {
+  "ID": "Q123",
+  "field": "V_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Most of these images are bluish-green in color, characterized by low brightness, blurriness, and color distortion",
+  "loc": "Sec. IV-A",
+  "reason": "V1 now NR and V2-V4 all NR -> V_ALL NR."
+ },
+ {
+  "ID": "Q164",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Fish4Knowledge obtains the highest scores (clear imagery, fewer classes), while FathomNet shows lower scores",
+  "loc": "Sec. V-B",
+  "reason": "Statement about benchmark datasets' image quality as explanation of scores, not water clarity of the in-situ (DeepFish) imagery; turbidity mentions are generic."
+ },
+ {
+  "ID": "Q164",
+  "field": "V_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Fish4Knowledge obtains the highest scores (clear imagery, fewer classes), while FathomNet shows lower scores",
+  "loc": "Sec. V-B",
+  "reason": "V1 now NR and V2-V4 all NR -> V_ALL NR."
+ },
+ {
+  "ID": "S009",
+  "field": "C1",
+  "old": "Y",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "in order to be considered as a detection the object had to be detected at least twice (within spatial overlap and offset constraints)",
+  "loc": "Sec. 4.1",
+  "reason": "Operating points are cascade stages/MHR/SFA, repeat-detection suppression and size tolerance; no detection score threshold stated."
+ },
+ {
+  "ID": "S009",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "in order to be considered as a detection the object had to be detected at least twice (within spatial overlap and offset constraints)",
+  "loc": "Sec. 4.1",
+  "reason": "Unified C rule: no score threshold (C1=NR) and C5=none -> NR."
+ },
+ {
+  "ID": "S071",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Example images from the SEAMAPD21 data showing the underwater low light environment.",
+  "loc": "Sec. III",
+  "reason": "Low-light only (illumination belongs to V3); no water clarity statement. V_ALL stays P via V2=Y."
+ },
+ {
+  "ID": "S081",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Evaluate our method on three public datasets with different image quality.",
+  "loc": "Sec. 1",
+  "reason": "Generic image-quality/detectability statement; no explicit water clarity/turbidity description of own imagery."
+ },
+ {
+  "ID": "S081",
+  "field": "V_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Evaluate our method on three public datasets with different image quality.",
+  "loc": "Sec. 1",
+  "reason": "V1 now NR and V2-V4 all NR -> V_ALL NR."
+ },
+ {
+  "ID": "N005",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "tends to have a preponderance of greens and blues as opposed to reds due to the nonlinear attenuation of the visible spectrum underwater",
+  "loc": "Sec. II.A",
+  "reason": "Only light-spectrum/strobe illumination statements; no statement on own water clarity or turbidity. V_ALL stays P (V2-V4 = Y)."
+ },
+ {
+  "ID": "N029",
+  "field": "C_ALL",
+  "old": "NR",
+  "new": "NA",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "All evaluation metrics are generated on the test set of the dataset presented in [14].",
+  "loc": "Sec. IV / Table II",
+  "reason": "Clip classification only (startle vs not), no detection score threshold reported: NA under the unified C rule."
+ },
+ {
+  "ID": "N062",
+  "field": "C1",
+  "old": "Y",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "the temperature parameter, which serves as a metaparameter governing segmentation behavior in Grounded SAM 2",
+  "loc": "Sec. 3.1",
+  "reason": "Grounded SAM 2 'temperature' is a segmentation metaparameter, not a detection score threshold; YOLO-World headline results give no confidence threshold."
+ },
+ {
+  "ID": "N062",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "the temperature was reduced to 0.10, resulting in an increase in detected fish but also a significant rise in false positive regions",
+  "loc": "Sec. 3.1",
+  "reason": "With C1 = NR, C2/C3 none and C5 none, the unified C rule gives NR."
+ },
+ {
+  "ID": "Q019",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "low visibility images which are affected by light attenuation and reflectance of seafloor",
+  "loc": "Sec. II-A / Fig. 2",
+  "reason": "'Low visibility' here means low luminance from light attenuation (illumination, V3), not water clarity or turbidity. V_ALL stays P (V3, V4 = Y)."
+ },
+ {
+  "ID": "S018",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "The video acquisition were not deep, and therefore we had a lot of colors ... but the light is moving with the waves",
+  "loc": "Sec. 4",
+  "reason": "Own-imagery statement concerns illumination only; 'sediments and dirt' is a generic challenge in Sec. 1. No water-clarity statement."
+ },
+ {
+  "ID": "S018",
+  "field": "V3",
+  "old": "NR",
+  "new": "Y",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "the light is moving with the waves, bringing many distortions",
+  "loc": "Sec. 4",
+  "reason": "Natural (surface) light conditions of own shallow-reef videos are described: illumination reported (V3). V_ALL therefore stays P."
+ },
+ {
+  "ID": "S046",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Those are typically images which were recorded at times of twilight, i.e. when the sun was below the horizon.",
+  "loc": "Sec. 4.3",
+  "reason": "The 'difficult visibility conditions' are explained by twilight and lack of active lighting (illumination, V3), not water clarity. V_ALL stays P (V2, V3 = Y)."
+ },
+ {
+  "ID": "S102",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Challenges such as variations in species appearance due to changing lighting and water conditions",
+  "loc": "Sec. 6",
+  "reason": "Only light-condition statements and a generic limitation sentence; no statement on own water clarity or turbidity."
+ },
+ {
+  "ID": "S102",
+  "field": "V3",
+  "old": "NR",
+  "new": "Y",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "a dataset with a variety of backgrounds, light conditions, and resolutions is generated",
+  "loc": "Sec. 3.1",
+  "reason": "Illumination variety of own dataset is stated (light belongs to V3, same as N088). V_ALL therefore stays P."
+ },
+ {
+  "ID": "U061",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "we select underwater fish scenes with low-light conditions",
+  "loc": "Sec. IV.A",
+  "reason": "Statement concerns illumination only (V3 already Y); no water clarity or turbidity statement for own imagery. V_ALL stays P."
+ },
+ {
+  "ID": "N024",
+  "field": "C1",
+  "old": "Y",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "The threshold values for each environmental condition were retrieved using Design of Experiments (DOE).",
+  "loc": "Sec. 2.7, Table 3",
+  "reason": "Thresholds are pixel-difference, scanline-variance, object-area and frame-count values, not detection/classification score thresholds."
+ },
+ {
+  "ID": "N024",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "NA",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "The binary classifier exploited temporal patterns found in the frame-wise binary classification.",
+  "loc": "Sec. 2.7",
+  "reason": "Fish/no-fish video classification without a score threshold and no FP verification -> NA under unified C rule."
+ },
+ {
+  "ID": "N082",
+  "field": "C1",
+  "old": "Y",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "We discard any box where this fraction is below a threshold θfrac = 0.1",
+  "loc": "Sec. 3.2",
+  "reason": "θpca (PCA projection) and θfrac (patch fraction) filter pseudo-labels for training; not score thresholds for reported MaxN results."
+ },
+ {
+  "ID": "N082",
+  "field": "C_ALL",
+  "old": "N",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "The final stage of our framework is a supervised regression model that learns to estimate MaxN counts",
+  "loc": "Sec. 3.3",
+  "reason": "MaxN regression output; no score threshold and no FP/duplicate control -> NR."
+ },
+ {
+  "ID": "Q129",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "the noise level was high, and the illumination was not so good as Seagrass.",
+  "loc": "Sec. V",
+  "reason": "Statement concerns noise and illumination (V3), not water clarity/turbidity; turbidity mentioned only as a generic challenge in Introduction. V_ALL stays P (V3=Y)."
+ },
+ {
+  "ID": "S020",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Fig. 1 Example of Underwater image that shows low light, high noise, and haze effect.",
+  "loc": "Sec. I, Fig. 1",
+  "reason": "Haze/low light described as generic underwater challenges in Introduction and Conclusion, not the study's own imagery clarity."
+ },
+ {
+  "ID": "S020",
+  "field": "V_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Underwater vision has specific characteristics such as high attenuation of lights, severe noise and haze in the images.",
+  "loc": "Abstract/Sec. I",
+  "reason": "With V1 = NR and V2-V4 all NR, no visibility item reported -> V_ALL NR."
+ },
+ {
+  "ID": "S028",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "Recording conditions varied between sites and days, especially in term of light and environment",
+  "loc": "Sec. 2.1",
+  "reason": "Refers to light and habitat composition only, no water clarity/turbidity statement. V_ALL stays P (V2=Y)."
+ },
+ {
+  "ID": "S051",
+  "field": "V1",
+  "old": "정성 서술만",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "extracted from videos recorded at different sites, with different conditions (weather, lighting, depth, time of the day, seascape)",
+  "loc": "Thumbnail datasets",
+  "reason": "Lists weather/lighting/depth variation; no water clarity/turbidity statement about own imagery."
+ },
+ {
+  "ID": "S051",
+  "field": "V_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "systematic sweep (error patterns from human verification)",
+  "quote": "extracted from videos recorded at different sites, with different conditions (weather, lighting, depth, time of the day, seascape)",
+  "loc": "Thumbnail datasets",
+  "reason": "V1 now NR and V2-V4 coded NR (conditions only listed, not reported) -> V_ALL NR."
+ },
+ {
+  "ID": "N046",
+  "field": "C5",
+  "old": "없음",
+  "new": "검증 표본 오탐률",
+  "source": "final consistency check",
+  "reason": "Detections were manually curated and checked; consistent with C_ALL = P (false-positive control without a threshold value).",
+  "quote": "detections for these species were manually curated and checked",
+  "loc": "p.7"
+ },
+ {
+  "ID": "N010",
+  "field": "C_ALL",
+  "old": "NA",
+  "new": "P",
+  "source": "final consistency check",
+  "reason": "Classification without a score threshold but with a verified false-positive check; under the unified rule C5 alone gives P (verifier consistency check).",
+  "quote": "A manual control by the domain expert ... confirmed that 5 098 of 5 235 videos were containing sea trout",
+  "loc": "Sec. 5"
+ },
+ {
+  "ID": "S094",
+  "field": "E2",
+  "old": "Y",
+  "new": "N",
+  "source": "final consistency check",
+  "reason": "E5 corrected to none: counts are not compared with any reference, so E2 = N (verifier consistency check).",
+  "quote": "",
+  "loc": ""
+ },
+ {
+  "ID": "S078",
+  "field": "R3",
+  "old": "Y",
+  "new": "N",
+  "source": "final consistency check",
+  "reason": "In-domain (mAP) and field (MaxN-F1) results use different metrics, so the change is not quantified on one metric; same rule as N072 and N080 (verifier consistency check).",
+  "quote": "between the model's training metrics (e.g. 83.6% mAP) and its performance in real-world situations (e.g. 54.4% MaxN-F1)",
+  "loc": "Discussion"
+ },
+ {
+  "ID": "S078",
+  "field": "R_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "final consistency check",
+  "reason": "R1 = Y, R3 = N -> P.",
+  "quote": "",
+  "loc": ""
+ },
+ {
+  "ID": "Q033",
+  "field": "R3",
+  "old": "Y",
+  "new": "N",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "The re-trained FgSegNet model has a slightly better performance (0.109) than pre-trained model",
+  "loc": "Sec. IV (Results)",
+  "reason": "Pre-trained vs re-trained FgSegNet are different models, both only on SmartBay; only in-domain value is CDnet F-measure 0.984 cited from another paper (different metric)."
+ },
+ {
+  "ID": "Q033",
+  "field": "R_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "The re-trained FgSegNet model has a slightly better performance (0.109) than pre-trained model",
+  "loc": "Sec. IV (Results)",
+  "reason": "Pre-trained vs re-trained FgSegNet are different models, both only on SmartBay; only in-domain value is CDnet F-measure 0.984 cited from another paper (different metric)."
+ },
+ {
+  "ID": "Q060",
+  "field": "R3",
+  "old": "Y",
+  "new": "N",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "The training and validation has been done with the dataset presented in Table 2, in which the test data is integrated as part of the training data.",
+  "loc": "Table 9 caption; Sec. 4.2 vs Table 4",
+  "reason": "THEMO results come from models retrained on train+test (3 new runs), not the Table 4 models; the retrained models have no in-domain test value."
+ },
+ {
+  "ID": "Q060",
+  "field": "R_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "The training and validation has been done with the dataset presented in Table 2, in which the test data is integrated as part of the training data.",
+  "loc": "Table 9 caption; Sec. 4.2 vs Table 4",
+  "reason": "THEMO results come from models retrained on train+test (3 new runs), not the Table 4 models; the retrained models have no in-domain test value."
+ },
+ {
+  "ID": "S032",
+  "field": "R3",
+  "old": "Y",
+  "new": "N",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "YOLOv3 Open Images 0.0022 0.0035",
+  "loc": "Table 3; Sec. 5.2",
+  "reason": "Only cross-domain model is off-the-shelf Open Images YOLOv3, tested only on Brackish; it is compared with fine-tuned models (different models). No in-domain value for it."
+ },
+ {
+  "ID": "S032",
+  "field": "R_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "YOLOv3 Open Images 0.0022 0.0035",
+  "loc": "Table 3; Sec. 5.2",
+  "reason": "Only cross-domain model is off-the-shelf Open Images YOLOv3, tested only on Brackish; it is compared with fine-tuned models (different models). No in-domain value for it."
+ },
+ {
+  "ID": "S036",
+  "field": "R3",
+  "old": "Y",
+  "new": "N",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "training using the 1605 images of dataset 1, and then testing on the 200 annotated images of dataset 2",
+  "loc": "Results, Experiment 1; Tables 1-2",
+  "reason": "Experiment-1 model reports results on dataset 2 only; no dataset-1 test value. Experiment 2 is a different model trained on both datasets."
+ },
+ {
+  "ID": "S036",
+  "field": "R_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "training using the 1605 images of dataset 1, and then testing on the 200 annotated images of dataset 2",
+  "loc": "Results, Experiment 1; Tables 1-2",
+  "reason": "Experiment-1 model reports results on dataset 2 only; no dataset-1 test value. Experiment 2 is a different model trained on both datasets."
+ },
+ {
+  "ID": "S055",
+  "field": "R3",
+  "old": "Y",
+  "new": "N",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "The SL located 89% of available shark frames (n = 2,277 frames) and the SI filtered out false-positive images with 94% specificity",
+  "loc": "Sec. 3.2, Table 2; Fig. 4e",
+  "reason": "In-domain performance is test accuracy per component (Fig. 4e); BRUV/YouTube results are recall/specificity (Table 2). No same-model, same-metric in-domain vs external pair."
+ },
+ {
+  "ID": "S055",
+  "field": "R_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "The SL located 89% of available shark frames (n = 2,277 frames) and the SI filtered out false-positive images with 94% specificity",
+  "loc": "Sec. 3.2, Table 2; Fig. 4e",
+  "reason": "In-domain performance is test accuracy per component (Fig. 4e); BRUV/YouTube results are recall/specificity (Table 2). No same-model, same-metric in-domain vs external pair."
+ },
+ {
+  "ID": "S091",
+  "field": "R3",
+  "old": "Y",
+  "new": "N",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "DeepFins achieved a 90.0% F1 Score on the OzFish dataset",
+  "loc": "Sec. 2.3.1",
+  "reason": "In-domain F1 is cited from Jalal et al. (another paper); this study reports only Sardinian-frame metrics for DeepFins/DeepEcomar."
+ },
+ {
+  "ID": "S091",
+  "field": "R_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: R same-model rule",
+  "quote": "DeepFins achieved a 90.0% F1 Score on the OzFish dataset",
+  "loc": "Sec. 2.3.1",
+  "reason": "In-domain F1 is cited from Jalal et al. (another paper); this study reports only Sardinian-frame metrics for DeepFins/DeepEcomar."
+ },
+ {
+  "ID": "N001",
+  "field": "C5",
+  "old": "검증 표본 오탐률",
+  "new": "없음",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "The detection threshold is set to be -0.5. Only the objects with DPM score higher than -0.5 can be detected.",
+  "loc": "Sec. IV.A; Tables I-II",
+  "reason": "Threshold given with a recall rationale only. Table I tracklet confusion matrix and counting errors are scored against ground truth of the test clips (standard metrics). No human verification of outputs, no duplicate mechanism."
+ },
+ {
+  "ID": "N001",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "N",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "The detection threshold is set to be -0.5. Only the objects with DPM score higher than -0.5 can be detected.",
+  "loc": "Sec. IV.A; Tables I-II",
+  "reason": "Threshold given with a recall rationale only. Table I tracklet confusion matrix and counting errors are scored against ground truth of the test clips (standard metrics). No human verification of outputs, no duplicate mechanism."
+ },
+ {
+  "ID": "N002",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "Y",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "The precision and recall values were obtained from 300 randomly selected segmented images.",
+  "loc": "Sec. IV-A; Table I",
+  "reason": "Random sample of the system's segmentation outputs from field transect videos checked by humans, giving precision 0.71 (FP share). No score threshold."
+ },
+ {
+  "ID": "N010",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "Y",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "A manual control by the do- main expert Uwe Friedrich confirmed that 5 098 of",
+  "loc": "Sec. 4.2 / 6; Table 2",
+  "reason": "Expert checked all 5,235 system-positive videos from 307,114 unlabelled field videos and reported precision 97.38% (137 FP). No score threshold."
+ },
+ {
+  "ID": "N041",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "Y",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "We developed our marked evaluation datasets using results from a preliminary run of the YOLO-based neural network that were marked by trained experts and volunteers",
+  "loc": "Methods (evaluation dataset); Table 3",
+  "reason": "Model-identified field frames verified by experts/volunteers, with FP counted (Table 3). Frame extraction by residence rate to avoid overcounting. No score threshold."
+ },
+ {
+  "ID": "N046",
+  "field": "C5",
+  "old": "검증 표본 오탐률",
+  "new": "없음",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "detections for these species were manually curated and checked.",
+  "loc": "Sec. 2.3 (p.6-7)",
+  "reason": "Per-species thresholds described, but no values in the main text. Rare-species detections curated without an FP count/rate. No duplicate mechanism, so NR (was P)."
+ },
+ {
+  "ID": "N046",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "detections for these species were manually curated and checked.",
+  "loc": "Sec. 2.3 (p.6-7)",
+  "reason": "Per-species thresholds described, but no values in the main text. Rare-species detections curated without an FP count/rate. No duplicate mechanism, so NR (was P)."
+ },
+ {
+  "ID": "N047",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "A secondary pruning step compares overlaps on top of entire tracks to reduce duplicates.",
+  "loc": "Sec. 3 (baselines)",
+  "reason": "Explicit duplicate-pruning mechanism; default score 0.5. No human FP verification, so P."
+ },
+ {
+  "ID": "N049",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "this study established detection thresholds of IoU = 0.3 and score = 0.3",
+  "loc": "Sec. 2.4; Table 6",
+  "reason": "IDSW measured per test video. Score 0.3 unexplained. The 'manual review' at stations reports accuracy, not FP. Duplicate only, so P."
+ },
+ {
+  "ID": "N054",
+  "field": "C5",
+  "old": "둘 다",
+  "new": "중복계수(ID switch) 처리",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "the F1 score for both target species peaked at a confidence threshold of 0.427",
+  "loc": "Sec. 2.6; Sec. 3.1; Fig. 3",
+  "reason": "Justified threshold. Count corrected for repeated detections. The 300-frame confusion matrix uses human annotations (test metric), not verification of outputs, so duplicate only."
+ },
+ {
+  "ID": "N054",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "the F1 score for both target species peaked at a confidence threshold of 0.427",
+  "loc": "Sec. 2.6; Sec. 3.1; Fig. 3",
+  "reason": "Justified threshold. Count corrected for repeated detections. The 300-frame confusion matrix uses human annotations (test metric), not verification of outputs, so duplicate only."
+ },
+ {
+  "ID": "N063",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "Confusion matrix of manual annotations (rows) and automatic detections (columns) with a score threshold of 0.47",
+  "loc": "Table 5; Table 6",
+  "reason": "Recurrence (repeated imaging) counts quantified/handled. Confusion matrix vs manual annotations is a standard metric. Duplicate only, so P."
+ },
+ {
+  "ID": "N067",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "the number of ID Switches dropped signifi- cantly (from 32 to 16)",
+  "loc": "Sec. 2.5.3; Sec. 3.1; Table 3",
+  "reason": "IDSW measured; threshold 0.25 a default. FP counts are MOT test metrics."
+ },
+ {
+  "ID": "N071",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "Across 45 test videos, the overall tracking performance achieved was: MOTA of 60.6%, ID switch rate of 1.0%",
+  "loc": "Sec. V; Table",
+  "reason": "ID-switch rate measured. Threshold 0.5 default, raised ad hoc. Precision is a test-set metric."
+ },
+ {
+  "ID": "N073",
+  "field": "C5",
+  "old": "중복계수(ID switch) 처리",
+  "new": "없음",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "certain other configurations produced false positives or overcounts",
+  "loc": "Sec. IV.B; Table III",
+  "reason": "FP/overcount flagged only as yes/no per model on two test clips; no count or rate. Only standard NMS. No threshold value, so NR (was P). Borderline."
+ },
+ {
+  "ID": "N073",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "certain other configurations produced false positives or overcounts",
+  "loc": "Sec. IV.B; Table III",
+  "reason": "FP/overcount flagged only as yes/no per model on two test clips; no count or rate. Only standard NMS. No threshold value, so NR (was P). Borderline."
+ },
+ {
+  "ID": "N077",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "Although a typical value is 0.5, we lowered it to 0.3 for challenging videos",
+  "loc": "Sec. IV; Table II",
+  "reason": "IDs measured; GUI merges broken tracks. FP are MOT test metrics."
+ },
+ {
+  "ID": "N084",
+  "field": "C5",
+  "old": "검증 표본 오탐률",
+  "new": "없음",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "Throughout testing, confidence threshold was set to 0.05 and the non-maximum suppression (NMS) IoU threshold was 0.4.",
+  "loc": "Sec. 2.3.5; Sec. 2.4; S2 Fig",
+  "reason": "Threshold chosen by exploratory analysis. The FP error analysis samples FPs defined against test annotations (standard metric). Duplicates are analysed as an error cause, with no handling mechanism."
+ },
+ {
+  "ID": "N084",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "Throughout testing, confidence threshold was set to 0.05 and the non-maximum suppression (NMS) IoU threshold was 0.4.",
+  "loc": "Sec. 2.3.5; Sec. 2.4; S2 Fig",
+  "reason": "Threshold chosen by exploratory analysis. The FP error analysis samples FPs defined against test annotations (standard metric). Duplicates are analysed as an error cause, with no handling mechanism."
+ },
+ {
+  "ID": "N087",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "we found the best performing confidence threshold based on the respective f1 score on the validation set.",
+  "loc": "Sec. 2.2; Sec. 3.2",
+  "reason": "F1-optimal per-species thresholds. Cluster/heuristic/TCN aggregation turns frame detections into per-video counts to avoid double counting. FP vs expert counts of test videos is a standard metric."
+ },
+ {
+  "ID": "N092",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "double counting of individuals in sequences with high visual noise",
+  "loc": "Sec. 2.5",
+  "reason": "ByteTrack plus a minimum 5-frame track rule to reduce double counting. Threshold 0.7 with rationale. No FP verification."
+ },
+ {
+  "ID": "Q056",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "detection score threshold τhigh was set to 0.7, and τlow was set to 0.2.",
+  "loc": "Sec. 4.1-4.2; Table 4",
+  "reason": "IDs measured and re-ID recovery mechanism. Thresholds set by hyperparameter search. FP are MOT metrics; no field verification."
+ },
+ {
+  "ID": "Q090",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "we used a spatiotemporal ﬁlter called sequen- tial nonmaximum suppression to minimize false detections",
+  "loc": "Methods: Abundance Predictions",
+  "reason": "Species thresholds chosen to minimise FP/FN, plus Seq-NMS as the stated mechanism. No FP measured on field footage, so not Y. P either way, even if Seq-NMS is not credited."
+ },
+ {
+  "ID": "S045",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "The number of duplicate images per individual appears to be species dependent.",
+  "loc": "Methods; Results; Table 3",
+  "reason": "F1-max threshold 0.47. Duplicate imaging quantified against catch. FP on the D3 test set is a standard metric. Duplicate only, so P."
+ },
+ {
+  "ID": "S047",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "the optimal procedure used Seq-NMS, a confidence threshold of 45%, and a cubic polynomial corrective equation",
+  "loc": "Methods; Results; Discussion",
+  "reason": "Seq-NMS targets double/triple detections of the same fish, and CTs are swept. No human FP verification of field outputs, so P."
+ },
+ {
+  "ID": "S054",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "The best performance metrics occurred with Seq-NMS turned on prior to applying conﬁdence thresholds",
+  "loc": "Methods; Results; Table 2",
+  "reason": "Seq-NMS links detections across frames, and CT 40% maximises F1. FP counts are vs test annotations. Duplicate only, so P."
+ },
+ {
+  "ID": "S084",
+  "field": "C5",
+  "old": "검증 표본 오탐률",
+  "new": "없음",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "we considered a predicted MaxN to be true if, for a given species, the predicted number of individuals was consistent across at least 2",
+  "loc": "Sec. 2.1-2.2; Table 2",
+  "reason": "FP only as test-set precision vs biologist annotations. Semi-automated review reports no FP count. 2-frame persistence is an FP filter (MaxN). No threshold, so NR (was P). Borderline."
+ },
+ {
+  "ID": "S084",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "we considered a predicted MaxN to be true if, for a given species, the predicted number of individuals was consistent across at least 2",
+  "loc": "Sec. 2.1-2.2; Table 2",
+  "reason": "FP only as test-set precision vs biologist annotations. Semi-automated review reports no FP count. 2-frame persistence is an FP filter (MaxN). No threshold, so NR (was P). Borderline."
+ },
+ {
+  "ID": "S085",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "we perform a post-processing step to eliminate potentially erroneous",
+  "loc": "Sec. 3.7; Appendix A",
+  "reason": "Duplicate-ID merging by IoU overlap. Threshold 0.5 a default. No FP verification, so P."
+ },
+ {
+  "ID": "S089",
+  "field": "C5",
+  "old": "검증 표본 오탐률",
+  "new": "없음",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "CNN detected deep water snappers were reviewed and manually",
+  "loc": "Sec. 2.3; Results",
+  "reason": "The 565 FP come from test-set annotations; expert correction gives no separate FP rate. MaxN-sequence filtering is dataset dedup. No threshold, so NR (was P). Borderline."
+ },
+ {
+  "ID": "S089",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "CNN detected deep water snappers were reviewed and manually",
+  "loc": "Sec. 2.3; Results",
+  "reason": "The 565 FP come from test-set annotations; expert correction gives no separate FP rate. MaxN-sequence filtering is dataset dedup. No threshold, so NR (was P). Borderline."
+ },
+ {
+  "ID": "S091",
+  "field": "C5",
+  "old": "중복계수(ID switch) 처리",
+  "new": "없음",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "with IoU = 0.5 and confidence threshold (conf) = 0.4, the model",
+  "loc": "Sec. 2.4.2; Sec. 2.5",
+  "reason": "Unexplained threshold 0.4. DeepSORT chosen for identity, but no ID-switch measure or duplicate rule. No FP verification, so N (was Y)."
+ },
+ {
+  "ID": "S091",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "N",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "with IoU = 0.5 and confidence threshold (conf) = 0.4, the model",
+  "loc": "Sec. 2.4.2; Sec. 2.5",
+  "reason": "Unexplained threshold 0.4. DeepSORT chosen for identity, but no ID-switch measure or duplicate rule. No FP verification, so N (was Y)."
+ },
+ {
+  "ID": "S107",
+  "field": "C5",
+  "old": "둘 다",
+  "new": "중복계수(ID switch) 처리",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "a sighting event was only retained if it persisted for a minimum duration of 1 s and was supported by detections across at least three distinct frames.",
+  "loc": "Sec. 2.3; Table 3",
+  "reason": "Detections aggregated into sighting events and expert-corrected tracks; threshold 0.20 with rationale. Tracker precision 0.76 is on test clips; no FP count from expert review. Duplicate only (was 둘 다), so P."
+ },
+ {
+  "ID": "S107",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "a sighting event was only retained if it persisted for a minimum duration of 1 s and was supported by detections across at least three distinct frames.",
+  "loc": "Sec. 2.3; Table 3",
+  "reason": "Detections aggregated into sighting events and expert-corrected tracks; threshold 0.20 with rationale. Tracker precision 0.76 is on test clips; no FP count from expert review. Duplicate only (was 둘 다), so P."
+ },
+ {
+  "ID": "U026",
+  "field": "C_ALL",
+  "old": "P",
+  "new": "Y",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "1000 of the 3.6 million fish trajectories were manually examined",
+  "loc": "Sec. 3 (p.8)",
+  "reason": "Manual check of 1,000 system trajectories from the field archive: about 2% false detections, about 25% erroneous trajectories. Outlier cleaning of erroneous trajectories. No score threshold."
+ },
+ {
+  "ID": "U030",
+  "field": "C_ALL",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 re-check: C false-positive measurement rule",
+  "quote": "Linking connects short trajectory segments to a long trajectory.",
+  "loc": "Sec. 3.3; Sec. 4.3",
+  "reason": "Trajectory linking/deleting is a stated mechanism. Score threshold 0.5 essentially default. FP measured only via test AP, so P."
+ },
+ {
+  "ID": "N005",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "We used an 80 to 20 ratio for dividing the dataset into training",
+  "loc": "Sec. II.B",
+  "reason": "Own data; only an 80/20 ratio given, no statement of how images were assigned (c)."
+ },
+ {
+  "ID": "N016",
+  "field": "D1",
+  "old": "사전 정의 공개 split 사용",
+  "new": "이미지/프레임 무작위",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "We have removed training images from FishLoc that overlap with FishSeg’s test set for reliable results.",
+  "loc": "Experiments (Dataset)",
+  "reason": "Uses DeepFish FishLoc/FishSeg provider splits (1600/640/960; 310/124/186) -> inherit random image within habitat; train/test overlap explicitly removed -> P (a)."
+ },
+ {
+  "ID": "N016",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "P",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "We have removed training images from FishLoc that overlap with FishSeg’s test set for reliable results.",
+  "loc": "Experiments (Dataset)",
+  "reason": "Uses DeepFish FishLoc/FishSeg provider splits (1600/640/960; 310/124/186) -> inherit random image within habitat; train/test overlap explicitly removed -> P (a)."
+ },
+ {
+  "ID": "N017",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "Our model was trained on a sample of 10,727 images sorted by our team of trained volunteers",
+  "loc": "Methods, Training and validation",
+  "reason": "Only counts of training (10,727) and validation (2,702) images; assignment not stated (c)."
+ },
+ {
+  "ID": "N023",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "Among these, around 2180 frames are used as training frames and 1020 frames are subjected to testing.",
+  "loc": "Sec. 3.1 Dataset Details",
+  "reason": "Only frame counts for UWA; no split stated for other datasets; assignment not stated (c)."
+ },
+ {
+  "ID": "N026",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "k-fold(이미지)",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "a 5-Fold Cross-Validation within the training/ validation part of the dataset has been used for the evaluation of the classification performance",
+  "loc": "Sec. 2.2 / Table 1",
+  "reason": "Headline AP includes 5-fold CV over annotated frames; test split counts only; k-fold over images, no leakage handling (b)."
+ },
+ {
+  "ID": "N026",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "N",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "a 5-Fold Cross-Validation within the training/ validation part of the dataset has been used for the evaluation of the classification performance",
+  "loc": "Sec. 2.2 / Table 1",
+  "reason": "Headline AP includes 5-fold CV over annotated frames; test split counts only; k-fold over images, no leakage handling (b)."
+ },
+ {
+  "ID": "N027",
+  "field": "D1",
+  "old": "사전 정의 공개 split 사용",
+  "new": "이미지/프레임 무작위",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The data splits of both datasets were defined by the dataset providers.",
+  "loc": "Sec. 4.1-4.2",
+  "reason": "Provider splits used; DeepFish FishSeg -> inherit random image within habitat (SUIM provider split unit undocumented); no leakage handling (a)."
+ },
+ {
+  "ID": "N027",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "N",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The data splits of both datasets were defined by the dataset providers.",
+  "loc": "Sec. 4.1-4.2",
+  "reason": "Provider splits used; DeepFish FishSeg -> inherit random image within habitat (SUIM provider split unit undocumented); no leakage handling (a)."
+ },
+ {
+  "ID": "N029",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "사전 정의 공개 split 사용",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "All evaluation metrics are generated on the test set of the dataset presented in [14].",
+  "loc": "Results; Dataset",
+  "reason": "Uses the predefined test set of the McIntosh et al. clip dataset; counts only (100 test/150 val clips), split unit undocumented -> NR."
+ },
+ {
+  "ID": "N033",
+  "field": "D1",
+  "old": "사전 정의 공개 split 사용",
+  "new": "이미지/프레임 무작위",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The FishSeg data split can be given as training (3 1 0), validation (1 2 4), and testing",
+  "loc": "Sec. 4.1 Datasets",
+  "reason": "Same splits as prior work / database providers (DeepFish FishSeg 310/124/186, SUIM, Large-scale) -> inherit DeepFish random image; no leakage handling (a)."
+ },
+ {
+  "ID": "N033",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "N",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The FishSeg data split can be given as training (3 1 0), validation (1 2 4), and testing",
+  "loc": "Sec. 4.1 Datasets",
+  "reason": "Same splits as prior work / database providers (DeepFish FishSeg 310/124/186, SUIM, Large-scale) -> inherit DeepFish random image; no leakage handling (a)."
+ },
+ {
+  "ID": "N038",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "divided into three subsets with 1280/272/272 images for the training/validation/testing, respectively.",
+  "loc": "Sec. II (Dataset), Table 1",
+  "reason": "Own relabelled compilation; counts only, assignment not stated (c)."
+ },
+ {
+  "ID": "N043",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "there are 409 images and 103 images from source domain used",
+  "loc": "Sec. 4.1 Dataset",
+  "reason": "Source-domain split given as counts only; target domain is a separate deployment (external test, coded under R) (c)."
+ },
+ {
+  "ID": "N044",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "k-fold(이미지)",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "A five-fold experiment is performed and averaged for results.",
+  "loc": "Sec. IV (Experiments); Abstract",
+  "reason": "Own Brackish 70:20:10 split with stated five-fold cross-validation over frames; no leakage handling (b)."
+ },
+ {
+  "ID": "N044",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "N",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "A five-fold experiment is performed and averaged for results.",
+  "loc": "Sec. IV (Experiments); Abstract",
+  "reason": "Own Brackish 70:20:10 split with stated five-fold cross-validation over frames; no leakage handling (b)."
+ },
+ {
+  "ID": "N048",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "a total of 3262 training images, 818 validation images, and 650 test images",
+  "loc": "Sec. 3.2",
+  "reason": "Own data; counts only, assignment of images to sets not stated (c)."
+ },
+ {
+  "ID": "N050",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "divided into 1199 images for training (80%), 199 images for validation (13%) and 102 images for testing (7%).",
+  "loc": "Sec. II.A Dataset",
+  "reason": "Counts/percentages only; assignment not stated (c)."
+ },
+ {
+  "ID": "N052",
+  "field": "D1",
+  "old": "사전 정의 공개 split 사용",
+  "new": "이미지/프레임 무작위",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The dataset is intentionally partitioned into 310 training images, 124 validation images, and 186 testing images.",
+  "loc": "Sec. III.D",
+  "reason": "DeepFish FishSeg provider partition (310/124/186) -> inherit random image within habitat; SUIM provider test set; no leakage handling (a)."
+ },
+ {
+  "ID": "N052",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "N",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The dataset is intentionally partitioned into 310 training images, 124 validation images, and 186 testing images.",
+  "loc": "Sec. III.D",
+  "reason": "DeepFish FishSeg provider partition (310/124/186) -> inherit random image within habitat; SUIM provider test set; no leakage handling (a)."
+ },
+ {
+  "ID": "N062",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "the dataset was split into training, validation, and test subsets using a ratio of 6:1:3, respectively.",
+  "loc": "Sec. 2.1-2.2",
+  "reason": "Own drone-video frames; ratio only, assignment not stated (c)."
+ },
+ {
+  "ID": "N085",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "N",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "the whole data set was divided into three equal subsets, in which one of the subsets was applied once as a validation set",
+  "loc": "Sec. III (Training)",
+  "reason": "Own 3-fold cross-validation over DeepFish images; no leakage handling (b)."
+ },
+ {
+  "ID": "N089",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "N",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "Each composite dataset was partitioned into five equal folds.",
+  "loc": "Sec. III (Training)",
+  "reason": "Stated 5-fold CV over images within each composite dataset; no leakage handling (b)."
+ },
+ {
+  "ID": "N091",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The DeepFish dataset includes 909 images used for testing.",
+  "loc": "Sec. III.A Dataset",
+  "reason": "DeepFish test set from prior curated version (not provider split) and local 70/15/15 ratio; assignment not stated. Video splits only recommended as future work (c)."
+ },
+ {
+  "ID": "N091",
+  "field": "D_ALL",
+  "old": "P",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The DeepFish dataset includes 909 images used for testing.",
+  "loc": "Sec. III.A Dataset",
+  "reason": "DeepFish test set from prior curated version (not provider split) and local 70/15/15 ratio; assignment not stated. Video splits only recommended as future work (c)."
+ },
+ {
+  "ID": "N093",
+  "field": "D1",
+  "old": "사전 정의 공개 split 사용",
+  "new": "영상(video)",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "Tracklet samples of M4 FT, ByteTrack, and OC-SORT on BrackishMOT test sequences.",
+  "loc": "Sec. IV.A; Fig. 9",
+  "reason": "Uses BrackishMOT predefined training/test sets, which are whole sequences (98 sequences, sequence-level split) (a/d)."
+ },
+ {
+  "ID": "N093",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "Y",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "Tracklet samples of M4 FT, ByteTrack, and OC-SORT on BrackishMOT test sequences.",
+  "loc": "Sec. IV.A; Fig. 9",
+  "reason": "Uses BrackishMOT predefined training/test sets, which are whole sequences (98 sequences, sequence-level split) (a/d)."
+ },
+ {
+  "ID": "N094",
+  "field": "D1",
+  "old": "사전 정의 공개 split 사용",
+  "new": "영상(video)",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The class distributions of the predefined training and validation subsets were counted from the annotation files.",
+  "loc": "Sec. 3.2",
+  "reason": "BrackishMOT predefined train/val (sequence-level); 'No additional random frame-level re-splitting was performed' -> inherit sequence unit (a)."
+ },
+ {
+  "ID": "N094",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "Y",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The class distributions of the predefined training and validation subsets were counted from the annotation files.",
+  "loc": "Sec. 3.2",
+  "reason": "BrackishMOT predefined train/val (sequence-level); 'No additional random frame-level re-splitting was performed' -> inherit sequence unit (a)."
+ },
+ {
+  "ID": "N095",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "the dataset split into 80% training, 10% testing, and 10% validation.",
+  "loc": "Sec. 3 (Experimental settings)",
+  "reason": "FishTrack frames re-split 80/10/10 by the authors; ratio only, assignment not stated (c)."
+ },
+ {
+  "ID": "Q011",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "N",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "In our evaluation, the standard 10-folds cross-validation",
+  "loc": "Sec. IV (Evaluation)",
+  "reason": "Stated 10-fold cross-validation over cropped fish images; no leakage handling (b)."
+ },
+ {
+  "ID": "Q025",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "the applicable data set was divided into 70% training images, 15% validation images and 15% testing images.",
+  "loc": "Sec. 2.3",
+  "reason": "Percentages only; assignment of images not stated (c)."
+ },
+ {
+  "ID": "Q062",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "10% of all images are separated for validation.",
+  "loc": "Sec. II.B DeepFish dataset",
+  "reason": "Own 90/10 re-split of DeepFish segmentation images, not the provider split; ratio only (c)."
+ },
+ {
+  "ID": "Q082",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "divided into two sets: 80% of the data as the training dataset and the remaining 20% as the validation dataset.",
+  "loc": "Sec. III",
+  "reason": "Percentages only; assignment not stated (c)."
+ },
+ {
+  "ID": "Q088",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The training of our ERT models has been performed using 270 of these image patches and the rest of them have been used for testing.",
+  "loc": "Sec. 3.1",
+  "reason": "Counts only; assignment of patches not stated (c)."
+ },
+ {
+  "ID": "Q113",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "Following a ratio of 7:1:2, we divided the images into training sets, validation sets, and testing sets.",
+  "loc": "Sec. 4.1",
+  "reason": "Ratio only; assignment not stated; public datasets without stated split (c)."
+ },
+ {
+  "ID": "Q123",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "remaining 110 images as the test set.",
+  "loc": "Sec. IV.A",
+  "reason": "Own DeepFish subset (1183 images); counts only (960/113/110), assignment not stated (c)."
+ },
+ {
+  "ID": "Q157",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The labeled images are divided into the training set and validation set at a ratio of 5:1.",
+  "loc": "Sec. IV.A",
+  "reason": "Ratio only; assignment not stated (c)."
+ },
+ {
+  "ID": "Q170",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "We used K = 5 different partitions of the dataset",
+  "loc": "Sec. 2 (Model training)",
+  "reason": "60/20/20 proportions over 5 partitions; how images were assigned not stated (not k-fold) (c)."
+ },
+ {
+  "ID": "Q181",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "for training and 909 images (3,029 instances) for evaluation.",
+  "loc": "Sec. IV.A.1",
+  "reason": "Own curated DeepFish detection subset (not provider split); counts only (c)."
+ },
+ {
+  "ID": "R006",
+  "field": "D1",
+  "old": "사전 정의 공개 split 사용",
+  "new": "이미지/프레임 무작위",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The whole dataset is already divided into three non-overlapping sets namely, train, validation, and tests in ratio 80/10/10.",
+  "loc": "Sec. 4.1",
+  "reason": "Brackish predefined split -> inherit random frame split; disjoint sets only, no leakage handling -> N (a)."
+ },
+ {
+  "ID": "R006",
+  "field": "D_ALL",
+  "old": "P",
+  "new": "N",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The whole dataset is already divided into three non-overlapping sets namely, train, validation, and tests in ratio 80/10/10.",
+  "loc": "Sec. 4.1",
+  "reason": "Brackish predefined split -> inherit random frame split; disjoint sets only, no leakage handling -> N (a)."
+ },
+ {
+  "ID": "R012",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "split ratios of 80%, 10%, and 10%, respectively.",
+  "loc": "Sec. IV.A (Dataset)",
+  "reason": "PLRD split by ratio only; Brackish used for transfer without stated split (c)."
+ },
+ {
+  "ID": "S012",
+  "field": "D_ALL",
+  "old": "NR",
+  "new": "N",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "10-fold cross-validation is applied, and the final classifier is",
+  "loc": "Sec. VI.C-D",
+  "reason": "Stated 10-fold CV over fish images (F4K, NOAA); no leakage handling (b)."
+ },
+ {
+  "ID": "S020",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "we divided them into two groups; 829 images for training and",
+  "loc": "Sec. II/III",
+  "reason": "Counts only (829/100); assignment not stated (c)."
+ },
+ {
+  "ID": "S030",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "we tested our network on a test dataset",
+  "loc": "Methods (Training datasets)",
+  "reason": "Synthetic training from 10-70 crops; 2400 real test images; how real images were assigned to crop source vs test not stated (c)."
+ },
+ {
+  "ID": "S033",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "%50 eğitim ve %50 test oranlarında bir kez bölünmüştür.",
+  "loc": "Sec. III",
+  "reason": "Frames randomly sampled from videos, but train/test division given only as ratios (80/20, 50/50) (c)."
+ },
+ {
+  "ID": "S064",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "A and B datasets were split into training, validation and test sets.",
+  "loc": "Table 1 note; Sec. 2",
+  "reason": "Counts only for A/B; assignment not stated; C/D are external tests (coded under R) (c)."
+ },
+ {
+  "ID": "S097",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "This dataset was divided into three parts: a training set (80%), a test set (10%) and a validation set (10%).",
+  "loc": "Sec. 2 (Dataset), Table 1",
+  "reason": "FishTrac re-split 80/10/10 per environment; assignment not stated (c)."
+ },
+ {
+  "ID": "S102",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "The dataset is split into a trainval partition composed of 4,173",
+  "loc": "Sec. 3.3",
+  "reason": "90/10 trainval/test by counts only (5-fold CV only for hyperparameters); assignment not stated (c)."
+ },
+ {
+  "ID": "U034",
+  "field": "D1",
+  "old": "이미지/프레임 무작위",
+  "new": "NR",
+  "source": "V7 re-check: D provider-split and consistency rule",
+  "quote": "We partitioned the images using an 85%–15% ratio, resulting in 1500 images for the training set and 265 images for the test set.",
+  "loc": "Sec. 5",
+  "reason": "OzFish split by ratio only; assignment not stated (c)."
+ },
+ {
+  "ID": "S025",
+  "field": "V6",
+  "old": "Y",
+  "new": "P",
+  "source": "V7 consistency: classes assigned by eye are not measured visibility",
+  "quote": null,
+  "loc": null,
+  "reason": "Four turbidity classes scored by eye; V6 = Y requires a measured variable."
+ },
+ {
+  "ID": "S106",
+  "field": "E3",
+  "old": "점 보정",
+  "new": "2단계 설계 추정",
+  "source": "V7 consistency: E3 category",
+  "quote": null,
+  "loc": null,
+  "reason": "DISCount is a design-based two-phase estimator using human review of a probability subsample, with confidence intervals; not a fixed point correction."
+ },
+ {
+  "ID": "S083",
+  "field": "(record)",
+  "old": null,
+  "new": "included",
+  "source": "V7: peer-reviewed version found (Ecological Informatics 2026); charted in two independent runs and adjudicated",
+  "reason": "Excluded at screening as a preprint; journal version published online 18 March 2026, before the search date."
+ }
+]

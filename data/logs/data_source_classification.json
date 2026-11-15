@@ -1,0 +1,916 @@
+{
+ "N001": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own NOAA ROV underwater video"
+ },
+ "N002": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own stereo GoPro transect videos, 20 sites, Verde Island Passage"
+ },
+ "N003": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own/partner NOAA luminance-only underwater fish videos"
+ },
+ "N005": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own NOAA Seabed AUV imagery | SPLIT: \"80 to 20 ratio\" only"
+ },
+ "N008": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own snorkel/SCUBA stereo and multi-camera videos: 'single', 'mixed', 'school' datasets plu"
+ },
+ "N010": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own motion-triggered river camera videos, 341,238 videos from 8 rivers over 5 months (proj"
+ },
+ "N012": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: 5 test cases (T1: 15 short deep-water baited/unbaited RUV clips; T2-T5: own shallow unbait"
+ },
+ "N014": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own 'Caribbean Fish' database (387 images), source footage not described"
+ },
+ "N016": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: DeepFish/SUIM only, open-source datasets; authors not footage collectors"
+ },
+ "N017": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own DEAC time-lapse camera-trap images, 21 patch-reef sites, 2018-2019 (130,621 collected, | SPLIT: 10,727 train / 2,702 validation image counts"
+ },
+ "N018": {
+  "SRC": "PUBLIC",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: Brackish public dataset only | SPLIT: \"chosen at random in an 8:1:1 ratio\""
+ },
+ "N021": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own SmartBay observatory videos (45 videos, public 'missfish' dataset)"
+ },
+ "N023": {
+  "SRC": "PUBLIC",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: LifeCLEF/F4K, UWA(OzFish), DeepFish, web Bubble Vision videos | SPLIT: 2180 training / 1020 test frames"
+ },
+ "N024": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own/partner footage: 3000 videos from seven Vaki River Watcher fishway counter sites"
+ },
+ "N025": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own net-attached Acoustic and Optical System (AOS) stereo stills, 5 deployments (OP12, OP1"
+ },
+ "N026": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: ONC observatory video; ONC coauthor (De Leo) | SPLIT: 2917/730 frame counts"
+ },
+ "N027": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: DeepFish FishSeg + SUIM"
+ },
+ "N029": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: ONC observatory clips; ONC coauthor, dataset by coauthor McIntosh | SPLIT: \"100 clips reserved for testing, 150 for validation\""
+ },
+ "N030": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own UFO stationary stereo low-light camera footage (Kiel Fjord, ~1 year); 73,144 annotated | SPLIT: \"random sampling\"; \"split executed on a per-image basis\""
+ },
+ "N031": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: Labeled Fishes in the Wild + ROV test videos, no own collection stated"
+ },
+ "N033": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: SUIM, DeepFish, Large-scale fish dataset"
+ },
+ "N034": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: SEAMAP survey; NOAA SEFSC coauthors"
+ },
+ "N036": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own NIWA in-trawl camera dataset (5 trips over 13 months); MOT17 half-val"
+ },
+ "N037": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: NOAA GFISHER survey; NOAA coauthors"
+ },
+ "N038": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: pooled test set includes own underwater-drone frames | SPLIT: 1280/272/272 images; 70/15/15"
+ },
+ "N039": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own VMAT dataset (33 sequences, 74K frames) from diver GoPro, REMUS AUV, Mesobot; plus in-"
+ },
+ "N040": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: Brackish + URPC"
+ },
+ "N041": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own continuous monochrome/IR video, June-Nov 2017 (8 training videos, 10 evaluation videos"
+ },
+ "N042": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own remote GoPro videos, EXOFISHMED campaigns 2017, 2019, 2020 (40 training videos, 9 test"
+ },
+ "N043": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own trawl-camera images: Sparkling Star deployment 2019 (source; 409 train / 103 test imag | SPLIT: 409/103 image counts"
+ },
+ "N044": {
+  "SRC": "PUBLIC",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: Brackish (Kaggle/Roboflow) | SPLIT: \"70:20:10 ratio\""
+ },
+ "N045": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: DFO baited video; DFO coauthor (Morris)"
+ },
+ "N046": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own 169 unbaited stereo-RUV deployments (GoPro Hero 9), 3 survey periods 2022-2023; 11,443"
+ },
+ "N047": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: FishTrack23 built from coauthors' programmes (NOAA, Ifremer)"
+ },
+ "N048": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own reservoir footage | SPLIT: 600 images \"selected separately\" as test, method not stated"
+ },
+ "N049": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own fishway video, 2022 passage season (5374 key-frame images; 3 MOT16-format tracking vid | SPLIT: \"8:2 ratio using a random selection process\""
+ },
+ "N050": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: DOV coral reef fish survey videos (own/partner), frames annotated in Roboflow | SPLIT: 1199/199/102 images"
+ },
+ "N051": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: DeepFish, Luderick-Seagrass, MoCA-Mask"
+ },
+ "N052": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: DeepFish FishSeg + SUIM"
+ },
+ "N053": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own in situ 3-GoPro stereo video around home corals, 4 tagged groups, 15 runs (2015, 2017)"
+ },
+ "N054": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own time-lapse camera images (Brinno TLC200Pro) from 4 survey days 2024-2025; 675 annotate | SPLIT: test = \"300 randomly sampled images\" from inference set"
+ },
+ "N062": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own FIFISH V6 underwater-drone video from irrigation pond | SPLIT: \"ratio of 6:1:3\""
+ },
+ "N063": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: Deep Vision IESNS survey; IMR authors"
+ },
+ "N067": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own/partner underwater video monitoring system footage, East China Sea; frames annotated i | SPLIT: \"stratified random sampling\" 80/10/10"
+ },
+ "N070": {
+  "SRC": "PUBLIC",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: Brackish, URPC, TrashCan; tank demo qualitative only | SPLIT: \"randomly split ... 8:1:1\""
+ },
+ "N071": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: GFISHERD24; NOAA SEFSC coauthors"
+ },
+ "N072": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own continuous fixed-camera video, 2020 (training, 171 min annotated) and 2021 (113 x 30-s"
+ },
+ "N073": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own underwater video clips from Galápagos (two 1-min training clips; 10-s and 15-s test cl | SPLIT: \"90% ... training, 10% ... test\""
+ },
+ "N074": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: PTFish dataset (own; 18,523 annotated IR+RGB stereo frames from flow-refuge cameras, EcoPe | SPLIT: \"using a randomizer to generate a new training and testing data for each run\""
+ },
+ "N075": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: \"four publicly available datasets\": DeepFish, Seagrass, YouTube-VOS"
+ },
+ "N076": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own in-situ GoPro Hero 5 videos 2015-2024 (22 episodes, 37 segments); PomerFishObj 14,989  | SPLIT: class-stratified 80/20 split of images by instances"
+ },
+ "N077": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: GFISHERD24; NOAA SEFSC coauthors"
+ },
+ "N078": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own SCSFish2025 dataset from in-situ online monitoring camera (23 videos)"
+ },
+ "N079": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: MFRI Riverwatcher videos; MFRI coauthors"
+ },
+ "N080": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own diver-operated GoPro transect videos: DATAT (2022, 8 locations; 13,033 images, 131 tra"
+ },
+ "N081": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: DeepFish + OzFish"
+ },
+ "N082": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: BRUV videos from VONGOLA project that funds the authors"
+ },
+ "N084": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own Deep Vision in-trawl camera images from IMR surveys 2020-2024 (white, red gain 1.5, re | SPLIT: \"stratified partitioning\" 60:20:20 of annotated images"
+ },
+ "N085": {
+  "SRC": "PUBLIC",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: DeepFish Kaggle version | SPLIT: 3-fold \"three equal subsets\", assignment not stated"
+ },
+ "N086": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own cabled camera stills 2016–2024 (442,000 images, 81,284 after filtering)"
+ },
+ "N087": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own diver-operated GoPro transect videos (55 videos; 125 m2 transects, 2022); image/annota"
+ },
+ "N088": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own field survey frames mixed with public resources | SPLIT: filenames \"randomly shuffled and allocated\""
+ },
+ "N089": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own/partner ROV images from 9 offshore platforms (~2,600 images stated; Table I lists 1,62 | SPLIT: \"five equal folds\", assignment not stated"
+ },
+ "N091": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: local Sabang dataset built by authors from underwater videos (quantitative cross-domain test)"
+ },
+ "N092": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own GoPro video at Excluder exit hole (camera position 4), 4 successful hauls of 2022 comm | SPLIT: test images \"subtracted from all hauls (sampling by time series splitting)\""
+ },
+ "N093": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: BrackishMOT, MFT22, FishTrack23, CTMC"
+ },
+ "N094": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: BrackishMOT public"
+ },
+ "N095": {
+  "SRC": "PUBLIC",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: FishTrack (Mandel et al.) + Pexels stock videos | SPLIT: 80/10/10 ratio"
+ },
+ "N096": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own unbaited RUV 'FishCam' footage (12 cameras, Mar 2022-Jun 2023, 9037 h); training annot | SPLIT: \"reserved 10% of all images, with representatives from all categories\""
+ },
+ "Q011": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: Cam-trawl data; NOAA AFSC coauthors | SPLIT: \"standard 10-folds cross-validation\" only"
+ },
+ "Q018": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own/partner fishway videos from 'Kymijoen vesi ja ympäristö ry': Dataset 1 (2013, 4 videos"
+ },
+ "Q019": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: AUV seafloor images from authors' AUV observation | SPLIT: \"randomly 10 images are selected\" for evaluation"
+ },
+ "Q025": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own IMR temperate dataset: GoPro nest-site videos (Austevoll 2015) + stereo-BRUV (Aust-Agd | SPLIT: 70/15/15 images"
+ },
+ "Q032": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: NINA sensor-triggered underwater videos from fish ladder (own partner data) | SPLIT: \"Eighty percent of each class are chosen randomly\""
+ },
+ "Q033": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: MISSFish: own observatory video (45 annotated videos, 13,946 frames, polygon masks)"
+ },
+ "Q056": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own observation video of a marine pasture over one year (5300 detection images, 6318 re-ID"
+ },
+ "Q060": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own THEMO sea-trial images (authors' moorings)"
+ },
+ "Q061": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own field video recorded with a video camera in the Sea of Azov; frames extracted every 30"
+ },
+ "Q062": {
+  "SRC": "PUBLIC",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: DeepFish segmentation subset | SPLIT: \"10% of all images are separated for validation\""
+ },
+ "Q073": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: UMOT (Zhang 2020), fish-school dataset of Liu et al. 2022a (different group), MOT17"
+ },
+ "Q082": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own images from four installed underwater cameras (with National Museum of Marine Science  | SPLIT: 80% (4041)/20% (1011)"
+ },
+ "Q084": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: OzFish public BRUV dataset"
+ },
+ "Q088": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own UVIMEF dataset (60 videos, 720 photos; low-cost TurboX camera, shallow coastal waters) | SPLIT: 270 patches train, rest test"
+ },
+ "Q090": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own unbaited remote underwater video (SJCAM), 280 h footage; 255 training snippets (13,928"
+ },
+ "Q091": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: video obtained on request from a fish-counting site (partner-provided, not public dataset)"
+ },
+ "Q095": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: DeepFish segmentation subset (13 clips, 310 frames) + Luderick-Seagrass (18 clips, 4280 fr"
+ },
+ "Q107": {
+  "SRC": "PUBLIC",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: Moreton Bay BRUV (Zenodo) + NINA/NTNU data; \"data from public sources\" | SPLIT: \"randomly divided ... random sampling in a 7:3 ratio\""
+ },
+ "Q111": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own freshwater fish dataset (Pearl River Park, 4,691 images); Fish4Knowledge23; Brackish; "
+ },
+ "Q113": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own freshwater fish dataset (park water, submerged RGB cameras); also Fish4Knowledge23, Br | SPLIT: \"ratio of 7:1:2, we divided the images\""
+ },
+ "Q118": {
+  "SRC": "PUBLIC",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: 14 public datasets | SPLIT: uniform split with \"generator seed of 42\""
+ },
+ "Q123": {
+  "SRC": "PUBLIC",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: DeepFish subset | SPLIT: 960/113/110 images"
+ },
+ "Q124": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own dataset: 12,000 frames from underwater fish-passage video of a hydropower station"
+ },
+ "Q129": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: IRWA fishway camera via MIT Sea Grant partner"
+ },
+ "Q132": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own nest-camera videos; 16,937 fixed-length trajectories from Tracktor (Faster R-CNN) trac | SPLIT: stratified split at trajectory level stated"
+ },
+ "Q134": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: pooled test includes own marine-ranch images | SPLIT: \"randomly divided at a ratio of 8:1:1\""
+ },
+ "Q147": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: UOT32 + DeepFish"
+ },
+ "Q157": {
+  "SRC": "PUBLIC",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: Labeled Fishes in the Wild, F4K, LifeCLEF | SPLIT: \"ratio of 5:1\""
+ },
+ "Q162": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: Brackish public"
+ },
+ "Q164": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: F4K, DeepFish, FathomNet benchmarks"
+ },
+ "Q167": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: BrackishMOT, GMOT-40, UTB180"
+ },
+ "Q170": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own stereo-video recordings at 16 pool-riffle transition locations, Sept-Oct 2022; 144 ann | SPLIT: K=5 partitions, 60/20/20 proportions"
+ },
+ "Q176": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own scuba-diver videos of nests, 4 videos (~31 min), 7374 frames at 4 fps; 3638 annotated  | SPLIT: \"annotated frames for each video were split\" 70/20/10"
+ },
+ "Q178": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: FjordFish dataset (own BRUV/RUV surveys 2018-2024): 3,002 images / 6,350 annotations; sepa"
+ },
+ "Q181": {
+  "SRC": "PUBLIC",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: public DeepFish subset | SPLIT: 3,596/909 images"
+ },
+ "R005": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own fixed camera in narrow pond/stream passage; training = 5000 synthetic images (lab fish"
+ },
+ "R006": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: Brackish public"
+ },
+ "R007": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own DeepSalmon tank videos evaluated"
+ },
+ "R011": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own ISIIS towed shadowgraph imagery, 2014 and 2015 summer cruises (R/V F.G. Walton Smith) | SPLIT: \"vignettes were randomly extracted\" for test"
+ },
+ "R012": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own PLRD lab videos | SPLIT: 80/10/10 split ratios"
+ },
+ "R013": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: FishTrack23 adapted; authors not dataset creators"
+ },
+ "S009": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own ROV footage released as 'Labeled Fishes in the Wild' (929 training stills with 1005 fi"
+ },
+ "S010": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: F4K project data; authors are F4K team; 3 additional real videos | SPLIT: 5-fold CV with images grouped by trajectory stated"
+ },
+ "S012": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: self-collected NOAA cam-trawl dataset | SPLIT: \"10-fold cross-validation is applied\" only"
+ },
+ "S018": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own MARBEC HD diver video; 13,000 fish thumbnails for training (augmented), 4 test videos "
+ },
+ "S020": {
+  "SRC": "PUBLIC",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: NOAA Fisheries Labeled Fishes in the Wild (929 images) + own ROV images from Ulleungdo Isl | SPLIT: 829 training / 100 testing images"
+ },
+ "S022": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own aquarium dataset (3 acquisition campaigns, 13,124 annotated images, 4,593 fish); own i | SPLIT: 17 sea images \"manually chosen to have minimum correlation\""
+ },
+ "S023": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: own annotated UAV aerial images (41) and 42 independent test images"
+ },
+ "S024": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own RUVS footage (baited and unbaited GoPro) from University of Sunshine Coast / Griffith  | SPLIT: \"using a random sampling technique\""
+ },
+ "S025": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own footage: OBSEA still images at 30-min frequency, 2012 (train/val) and 2013 (test)"
+ },
+ "S027": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own stereo-BRUV footage (2011-2013), 10-s clips per species, 2,209 cropped 224x224 still i"
+ },
+ "S028": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own stationary GoPro videos (116 videos, 25 h, 450,000 frames); 44,625 training thumbnails"
+ },
+ "S029": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own footage: three MHK/hydropower underwater video datasets (Voith Hydro 15,918 frames; We"
+ },
+ "S030": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own Deep Vision in-trawl stereo camera images (1,216,914 image pairs collected; ~1000 cura | SPLIT: \"20% of this dataset was kept as validation\""
+ },
+ "S031": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own unbaited RUV clips from 20 habitats: FD10 (4,017 frames, every 10th frame) + FD10-Test | SPLIT: every 10th frame for training; fixed-seed random train/val split"
+ },
+ "S032": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Brackish Dataset (own footage, 89 handpicked clips, Feb 20 - Mar 25 2019, single fixed cam | SPLIT: \"split randomly into 80 % training, 10 % validation and 10 % test\""
+ },
+ "S033": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own dataset: 400 frames randomly selected from 53 five-minute videos from two cameras (Cam | SPLIT: frames randomly selected from videos, then %80-%20 / %50-%50 split without stated assignment"
+ },
+ "S034": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own footage: submerged action cameras in seagrass meadows, Feb-Jul 2019; 6,080 annotated f"
+ },
+ "S035": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own footage (submerged action cameras, Feb 2019–Mar 2020); three training sets (~4,700 ann"
+ },
+ "S036": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own Deep Vision stereo images: dataset 1 = 1,605 annotated images from 3 hauls (138,055 st | SPLIT: \"randomly selected 90% images\""
+ },
+ "S039": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own LoVe observatory time-lapse stills (8,818 images, 60-min interval, Oct 2017-Jun 2019); | SPLIT: 10-fold CV with class elements \"distributed evenly in each fold\""
+ },
+ "S040": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: DeepFish footage collected by coauthors (Bradley/Sheaves) | SPLIT: \"randomly select 50% training, 20% ... 30% ... for each habitat\""
+ },
+ "S043": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own RUV footage: 140 positive + 1,398 negative training images; test on 49 video deploymen"
+ },
+ "S044": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own dataset: 175 GoPro HD videos (83 h); T0 training 130 videos / 69,169 cropped images (6"
+ },
+ "S045": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: Deep Vision data; IMR authors incl. dataset author"
+ },
+ "S046": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own footage from a stationary seafloor stereo sensor platform (Photonis Nocturn XL low-lig"
+ },
+ "S047": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own BRUVS footage, six sites, July 2019; 4,690 train/val annotations + 3,627 test annotati"
+ },
+ "S049": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own footage: training videos (May–Sep 2019, six action cameras, 8,700 annotated fish) and "
+ },
+ "S050": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own in-trawl footage (720p, 60 fps) from sediment-suppressing NepCon camera system; 4,385 "
+ },
+ "S051": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own GoPro videos (175 videos); thumbnail sets T0 = 69,169 (130 videos), T1 = 6,320 (20 vid"
+ },
+ "S053": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: SEAMAPD21; NOAA SEFSC coauthors | SPLIT: \"When we randomly split the dataset\""
+ },
+ "S054": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own underwater drone (QYSea FiFish V6) videos: 3 surveys x 3 days, 237 snippets, 11,714 an"
+ },
+ "S055": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: sharkPulse archive run by authors' programme | SPLIT: \"90% of the training set ... remaining images\""
+ },
+ "S056": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: public Wells Dam (PNNL) + public Ocqueoc DIDSON"
+ },
+ "S058": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own temperate dataset (GoPro HERO4-7 at 2-5 m reef sites; stereo-BRUV at 8-35 m), 619 dete | SPLIT: detection dataset \"randomly split\" 70/30"
+ },
+ "S059": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: OzFish; AIMS coauthors"
+ },
+ "S060": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own OBSEA observatory still images: 14,025 images (one every 30 min, Jan–Dec 2014), 62,038"
+ },
+ "S063": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: CCMAR BRUV videos; CCMAR coauthors"
+ },
+ "S064": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own/partner footage: Own datasets A (Subeye cabled camera, wreck, 6 m), B (drop-down and diver GoPro, 5-20 m),  | SPLIT: \"approx 20% of the images\" validation"
+ },
+ "S065": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: Luderick-Seagrass (Ditria et al.)"
+ },
+ "S067": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own FishInTurbidWater dataset: 15-camera drop array, 60-min MP4 per camera per drop, 1,800"
+ },
+ "S069": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own footage from the Internet Operated Vehicle (crawler) 'Wally', 18 transects, 2 Nov - 2  | SPLIT: tenfold CV with class elements \"distributed evenly in each fold\""
+ },
+ "S070": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: OzFish stereo-BRUVS; AIMS coauthors"
+ },
+ "S071": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: SEAMAPD21; NOAA coauthors"
+ },
+ "S072": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: SEAMAPD21; NOAA coauthors"
+ },
+ "S073": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: SEAMAPD21; NOAA coauthors"
+ },
+ "S075": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own fishway monitoring video (Hikvision camera with LED light wall; 807 videos, 322 valid, | SPLIT: \"randomly divided into training sets and test sets ... 8:2\""
+ },
+ "S078": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own footage: 392 unbaited GoPro deployments 2016–2019 (channel billabongs) + 180 deploymen"
+ },
+ "S079": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own submarine-cable observatory video (OTWHC-500 camera with supplementary lights), Dongji | SPLIT: \"5600 annotated images are randomly selected\""
+ },
+ "S081": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: \"four publicly available datasets\""
+ },
+ "S084": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own BRUVS footage: 185 one-hour videos (163 training / 22 testing stations); 1,366 clips o"
+ },
+ "S085": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own deep BRUVS footage (GoPro Hero 4, 1920x1080, 60 fps, LED light): 289 fifteen-second vi"
+ },
+ "S088": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: DFO dataset; DFO coauthor"
+ },
+ "S089": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own deep-water stereo-BRUVS footage (121 deployments, 2019–2020, RV ALIS campaigns); 410 1"
+ },
+ "S091": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own SardinIA dataset: 729 annotated frames from DOVC videos (3 replicate 50-m transects, B | SPLIT: \"randomly divided ... 8:1:1\""
+ },
+ "S094": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own fixed IP camera (View into the Blue PTZ) stills at 11 m depth, 21 Mar-23 May 2023: 29,"
+ },
+ "S095": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: OzFish (AIMS) + LifeCLEF 2015"
+ },
+ "S097": {
+  "SRC": "PUBLIC",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: FishTrac public dataset (Mandel et al. 2023) | SPLIT: 8:1:1 \"performed across the corresponding environments\"; assignment not stated"
+ },
+ "S098": {
+  "SRC": "PUBLIC",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: Brackish, UOv2/URPC, RUOD | SPLIT: \"randomly divided ... 8:1:1\""
+ },
+ "S099": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: own/partner footage: Own CECO observatory frames: 'several thousand underwater frames' with >40,000 annotated f | SPLIT: \"stratified sampling\" 80/10/10"
+ },
+ "S102": {
+  "SRC": "OWN",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: own stereo vision field test set | SPLIT: 4,173 (90%) / 462 (10%)"
+ },
+ "S103": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: SEAMAPD21; NOAA coauthors"
+ },
+ "S106": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own fishway/river camera video 2015–2018 (Ipswich), 2024 (Coonamessett), Santuit; 1435 lab"
+ },
+ "S107": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own footage: SORCE long-term BRUV monitoring, 244 deployments, 53 sites, 328 h (2023-2025)"
+ },
+ "U013": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own: training images captured in laboratory (5000 per species); test videos from installed"
+ },
+ "U014": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own MiviaFish test set \"specifically collected\""
+ },
+ "U019": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: authors' own Fish_YOLO_Dataset from oceanographic campaigns"
+ },
+ "U026": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: F4K raw archive; authors from F4K project"
+ },
+ "U030": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: MHK dataset (Xu & Matzner) + Wells Dam test video"
+ },
+ "U033": {
+  "SRC": "OWN",
+  "SPLIT": "NA",
+  "why": "SRC: own/partner footage: Own underwater videos from sites across the Philippines (detector annotations from Labao &"
+ },
+ "U034": {
+  "SRC": "PUBLIC",
+  "SPLIT": "COUNTS_ONLY",
+  "why": "SRC: OzFish + synthetic | SPLIT: \"85%-15% ratio, 1500 / 265 images\""
+ },
+ "U043": {
+  "SRC": "PUBLIC",
+  "SPLIT": "NA",
+  "why": "SRC: DeepFish"
+ },
+ "U061": {
+  "SRC": "PUBLIC",
+  "SPLIT": "EXPLICIT",
+  "why": "SRC: low-light subsets of DeepFish and OzFish | SPLIT: \"randomly divided\" 70/10/20"
+ },
+ "S083": {
+  "SRC": "OWN",
+  "SPLIT": "EXPLICIT"
+ }
+}

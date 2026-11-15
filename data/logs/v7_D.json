@@ -1,0 +1,662 @@
+{
+ "N005": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "We used an 80 to 20 ratio for dividing the dataset into training",
+  "loc": "Sec. II.B",
+  "reason": "Own data; only an 80/20 ratio given, no statement of how images were assigned (c)."
+ },
+ "N016": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "Y",
+  "D4": "Y",
+  "D_ALL": "P",
+  "changed": true,
+  "quote": "We have removed training images from FishLoc that overlap with FishSeg’s test set for reliable results.",
+  "loc": "Experiments (Dataset)",
+  "reason": "Uses DeepFish FishLoc/FishSeg provider splits (1600/640/960; 310/124/186) -> inherit random image within habitat; train/test overlap explicitly removed -> P (a)."
+ },
+ "N017": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "Our model was trained on a sample of 10,727 images sorted by our team of trained volunteers",
+  "loc": "Methods, Training and validation",
+  "reason": "Only counts of training (10,727) and validation (2,702) images; assignment not stated (c)."
+ },
+ "N018": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": false,
+  "quote": "The dataset is chosen at random in an 8:1:1 ratio",
+  "loc": "Sec. 4.1.1",
+  "reason": "Own stated random 8:1:1 split of Brackish images; no leakage handling (b)."
+ },
+ "N023": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "Among these, around 2180 frames are used as training frames and 1020 frames are subjected to testing.",
+  "loc": "Sec. 3.1 Dataset Details",
+  "reason": "Only frame counts for UWA; no split stated for other datasets; assignment not stated (c)."
+ },
+ "N026": {
+  "D1": "k-fold(이미지)",
+  "D3": "N",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": true,
+  "quote": "a 5-Fold Cross-Validation within the training/ validation part of the dataset has been used for the evaluation of the classification performance",
+  "loc": "Sec. 2.2 / Table 1",
+  "reason": "Headline AP includes 5-fold CV over annotated frames; test split counts only; k-fold over images, no leakage handling (b)."
+ },
+ "N027": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": true,
+  "quote": "The data splits of both datasets were defined by the dataset providers.",
+  "loc": "Sec. 4.1-4.2",
+  "reason": "Provider splits used; DeepFish FishSeg -> inherit random image within habitat (SUIM provider split unit undocumented); no leakage handling (a)."
+ },
+ "N029": {
+  "D1": "사전 정의 공개 split 사용",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "All evaluation metrics are generated on the test set of the dataset presented in [14].",
+  "loc": "Results; Dataset",
+  "reason": "Uses the predefined test set of the McIntosh et al. clip dataset; counts only (100 test/150 val clips), split unit undocumented -> NR."
+ },
+ "N030": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "N",
+  "D4": "Y",
+  "D_ALL": "P",
+  "changed": false,
+  "quote": "The dataset described above was partitioned into a training and validation set using a ratio of 0.85, achieved by random sampling.",
+  "loc": "Sec. 4",
+  "reason": "Own random per-image split; similar-image leakage discussed and day-held-out validation images added -> P (b)."
+ },
+ "N033": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": true,
+  "quote": "The FishSeg data split can be given as training (3 1 0), validation (1 2 4), and testing",
+  "loc": "Sec. 4.1 Datasets",
+  "reason": "Same splits as prior work / database providers (DeepFish FishSeg 310/124/186, SUIM, Large-scale) -> inherit DeepFish random image; no leakage handling (a)."
+ },
+ "N038": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "divided into three subsets with 1280/272/272 images for the training/validation/testing, respectively.",
+  "loc": "Sec. II (Dataset), Table 1",
+  "reason": "Own relabelled compilation; counts only, assignment not stated (c)."
+ },
+ "N040": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "utilizing 20% of the data, distinct from the training data, to assess the credibility",
+  "loc": "Methods (validation)",
+  "reason": "Brackish/URPC used without stating a predefined split; only a 20% proportion given (c)."
+ },
+ "N043": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "there are 409 images and 103 images from source domain used",
+  "loc": "Sec. 4.1 Dataset",
+  "reason": "Source-domain split given as counts only; target domain is a separate deployment (external test, coded under R) (c)."
+ },
+ "N044": {
+  "D1": "k-fold(이미지)",
+  "D3": "N",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": true,
+  "quote": "A five-fold experiment is performed and averaged for results.",
+  "loc": "Sec. IV (Experiments); Abstract",
+  "reason": "Own Brackish 70:20:10 split with stated five-fold cross-validation over frames; no leakage handling (b)."
+ },
+ "N048": {
+  "D1": "NR",
+  "D3": "N",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "a total of 3262 training images, 818 validation images, and 650 test images",
+  "loc": "Sec. 3.2",
+  "reason": "Own data; counts only, assignment of images to sets not stated (c)."
+ },
+ "N050": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "divided into 1199 images for training (80%), 199 images for validation (13%) and 102 images for testing (7%).",
+  "loc": "Sec. II.A Dataset",
+  "reason": "Counts/percentages only; assignment not stated (c)."
+ },
+ "N051": {
+  "D1": "영상(video)",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "Y",
+  "changed": false,
+  "quote": "12 video clips with 3107 images are selected for training, 8 video clips with 693 images are selected for validation, and 11 video clips",
+  "loc": "Sec. 3.1 Datasets",
+  "reason": "Joint DeepFish+Seagrass split by video clip (d)."
+ },
+ "N052": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": true,
+  "quote": "The dataset is intentionally partitioned into 310 training images, 124 validation images, and 186 testing images.",
+  "loc": "Sec. III.D",
+  "reason": "DeepFish FishSeg provider partition (310/124/186) -> inherit random image within habitat; SUIM provider test set; no leakage handling (a)."
+ },
+ "N062": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "the dataset was split into training, validation, and test subsets using a ratio of 6:1:3, respectively.",
+  "loc": "Sec. 2.1-2.2",
+  "reason": "Own drone-video frames; ratio only, assignment not stated (c)."
+ },
+ "N070": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "N",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": false,
+  "quote": "The dataset was randomly split into training, validation, and testing sets in an 8:1:1 ratio.",
+  "loc": "Sec. 4.1 Datasets",
+  "reason": "Own stated random 8:1:1 split of Brackish (and others); no leakage handling (b)."
+ },
+ "N075": {
+  "D1": "지역",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "Y",
+  "changed": false,
+  "quote": "The feature extractor was trained on DeepFish and evaluated on Seagrass and YouTube-VOS.",
+  "loc": "Sec. 3.1 Datasets",
+  "reason": "Training and test sets are different datasets/regions (d)."
+ },
+ "N080": {
+  "D1": "영상(video)",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "Y",
+  "changed": false,
+  "quote": "47 independent videos in the test set",
+  "loc": "Sec. 2 (Data)",
+  "reason": "Split by whole transect videos (131 train / 47 test) (d)."
+ },
+ "N081": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "The combined dataset in total contains 8275 images which divided in the ratio of 75% training, 15% validation and 10% testing.",
+  "loc": "Sec. II.A",
+  "reason": "Own re-split of combined DeepFish+OzFish; ratio only, no assignment stated (c)."
+ },
+ "N085": {
+  "D1": "k-fold(이미지)",
+  "D3": "N",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": true,
+  "quote": "the whole data set was divided into three equal subsets, in which one of the subsets was applied once as a validation set",
+  "loc": "Sec. III (Training)",
+  "reason": "Own 3-fold cross-validation over DeepFish images; no leakage handling (b)."
+ },
+ "N089": {
+  "D1": "k-fold(이미지)",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": true,
+  "quote": "Each composite dataset was partitioned into five equal folds.",
+  "loc": "Sec. III (Training)",
+  "reason": "Stated 5-fold CV over images within each composite dataset; no leakage handling (b)."
+ },
+ "N091": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "Y",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "The DeepFish dataset includes 909 images used for testing.",
+  "loc": "Sec. III.A Dataset",
+  "reason": "DeepFish test set from prior curated version (not provider split) and local 70/15/15 ratio; assignment not stated. Video splits only recommended as future work (c)."
+ },
+ "N093": {
+  "D1": "영상(video)",
+  "D3": "N",
+  "D4": "N",
+  "D_ALL": "Y",
+  "changed": true,
+  "quote": "Tracklet samples of M4 FT, ByteTrack, and OC-SORT on BrackishMOT test sequences.",
+  "loc": "Sec. IV.A; Fig. 9",
+  "reason": "Uses BrackishMOT predefined training/test sets, which are whole sequences (98 sequences, sequence-level split) (a/d)."
+ },
+ "N094": {
+  "D1": "영상(video)",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "Y",
+  "changed": true,
+  "quote": "The class distributions of the predefined training and validation subsets were counted from the annotation files.",
+  "loc": "Sec. 3.2",
+  "reason": "BrackishMOT predefined train/val (sequence-level); 'No additional random frame-level re-splitting was performed' -> inherit sequence unit (a)."
+ },
+ "N095": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "the dataset split into 80% training, 10% testing, and 10% validation.",
+  "loc": "Sec. 3 (Experimental settings)",
+  "reason": "FishTrack frames re-split 80/10/10 by the authors; ratio only, assignment not stated (c)."
+ },
+ "Q011": {
+  "D1": "k-fold(이미지)",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": true,
+  "quote": "In our evaluation, the standard 10-folds cross-validation",
+  "loc": "Sec. IV (Evaluation)",
+  "reason": "Stated 10-fold cross-validation over cropped fish images; no leakage handling (b)."
+ },
+ "Q025": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "the applicable data set was divided into 70% training images, 15% validation images and 15% testing images.",
+  "loc": "Sec. 2.3",
+  "reason": "Percentages only; assignment of images not stated (c)."
+ },
+ "Q061": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "made two different experiments which differs mostly by data",
+  "loc": "Sec. III.A",
+  "reason": "No train/test split described at all."
+ },
+ "Q062": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "10% of all images are separated for validation.",
+  "loc": "Sec. II.B DeepFish dataset",
+  "reason": "Own 90/10 re-split of DeepFish segmentation images, not the provider split; ratio only (c)."
+ },
+ "Q082": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "divided into two sets: 80% of the data as the training dataset and the remaining 20% as the validation dataset.",
+  "loc": "Sec. III",
+  "reason": "Percentages only; assignment not stated (c)."
+ },
+ "Q088": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "The training of our ERT models has been performed using 270 of these image patches and the rest of them have been used for testing.",
+  "loc": "Sec. 3.1",
+  "reason": "Counts only; assignment of patches not stated (c)."
+ },
+ "Q095": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "We selected 31 video clips with 4409 images from the DeepFish",
+  "loc": "Sec. 3.1 Datasets",
+  "reason": "6:2:2 ratio on DeepFish+Seagrass; unclear whether clips or frames were assigned; no assignment stated (c)."
+ },
+ "Q111": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "selecting 4,691 images for our dataset. Following a ratio of 7:1:2,",
+  "loc": "Sec. 4.1",
+  "reason": "Own data ratio only; public datasets used without stated split (c)."
+ },
+ "Q113": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "Following a ratio of 7:1:2, we divided the images into training sets, validation sets, and testing sets.",
+  "loc": "Sec. 4.1",
+  "reason": "Ratio only; assignment not stated; public datasets without stated split (c)."
+ },
+ "Q123": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "remaining 110 images as the test set.",
+  "loc": "Sec. IV.A",
+  "reason": "Own DeepFish subset (1183 images); counts only (960/113/110), assignment not stated (c)."
+ },
+ "Q147": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "validation was employed. This technique splits the dataset",
+  "loc": "Sec. IV (Training setup)",
+  "reason": "k-fold used only for hyperparameter tuning; split producing headline results not described (c)."
+ },
+ "Q157": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "The labeled images are divided into the training set and validation set at a ratio of 5:1.",
+  "loc": "Sec. IV.A",
+  "reason": "Ratio only; assignment not stated (c)."
+ },
+ "Q162": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "Input image dimensions were standardized to 640×640 pixels",
+  "loc": "Sec. 4 (Experimental setup)",
+  "reason": "Brackish used; no split (predefined or own) described."
+ },
+ "Q164": {
+  "D1": "사전 정의 공개 split 사용",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "we adopt standard splits on each dataset",
+  "loc": "Sec. IV (Experimental Setup)",
+  "reason": "Vague 'standard splits' across F4K, DeepFish and FathomNet; no provider split named or unit stated -> NR."
+ },
+ "Q167": {
+  "D1": "영상(video)",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "Y",
+  "changed": false,
+  "quote": "underwent training on 78 sequences and was then assessed",
+  "loc": "Sec. IV (Datasets)",
+  "reason": "BrackishMOT split by sequence (78 train / 20 test) (d)."
+ },
+ "Q170": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "We used K = 5 different partitions of the dataset",
+  "loc": "Sec. 2 (Model training)",
+  "reason": "60/20/20 proportions over 5 partitions; how images were assigned not stated (not k-fold) (c)."
+ },
+ "Q181": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "for training and 909 images (3,029 instances) for evaluation.",
+  "loc": "Sec. IV.A.1",
+  "reason": "Own curated DeepFish detection subset (not provider split); counts only (c)."
+ },
+ "R006": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": true,
+  "quote": "The whole dataset is already divided into three non-overlapping sets namely, train, validation, and tests in ratio 80/10/10.",
+  "loc": "Sec. 4.1",
+  "reason": "Brackish predefined split -> inherit random frame split; disjoint sets only, no leakage handling -> N (a)."
+ },
+ "R007": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "the 2 datasets have a train-validation-test split of 80% − 10% − 10% for both DeepFish and",
+  "loc": "Sec. 5 (Experiments)",
+  "reason": "Own 80/10/10 re-split for DeepFish and DeepSalmon; ratio only (c)."
+ },
+ "R012": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "split ratios of 80%, 10%, and 10%, respectively.",
+  "loc": "Sec. IV.A (Dataset)",
+  "reason": "PLRD split by ratio only; Brackish used for transfer without stated split (c)."
+ },
+ "S012": {
+  "D1": "k-fold(이미지)",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": true,
+  "quote": "10-fold cross-validation is applied, and the final classifier is",
+  "loc": "Sec. VI.C-D",
+  "reason": "Stated 10-fold CV over fish images (F4K, NOAA); no leakage handling (b)."
+ },
+ "S020": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "we divided them into two groups; 829 images for training and",
+  "loc": "Sec. II/III",
+  "reason": "Counts only (829/100); assignment not stated (c)."
+ },
+ "S030": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "we tested our network on a test dataset",
+  "loc": "Methods (Training datasets)",
+  "reason": "Synthetic training from 10-70 crops; 2400 real test images; how real images were assigned to crop source vs test not stated (c)."
+ },
+ "S032": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": false,
+  "quote": "The dataset is split randomly into 80 % training, 10 %",
+  "loc": "Sec. (Dataset)",
+  "reason": "Brackish dataset paper: random frame split; no leakage handling (b)."
+ },
+ "S033": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "%50 eğitim ve %50 test oranlarında bir kez bölünmüştür.",
+  "loc": "Sec. III",
+  "reason": "Frames randomly sampled from videos, but train/test division given only as ratios (80/20, 50/50) (c)."
+ },
+ "S040": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": false,
+  "quote": "We randomly select 50% training, 20% for validation and 30% for testing for each habitat",
+  "loc": "Dataset splits",
+  "reason": "DeepFish paper: random image split within habitat; no leakage handling (b)."
+ },
+ "S059": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "split at a ratio of 66%, 17%, and 17%, respectively, between classes",
+  "loc": "Sec. 2.3; Fig. 3",
+  "reason": "OzFish subset re-split by class ratio only; assignment not stated (c)."
+ },
+ "S064": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "A and B datasets were split into training, validation and test sets.",
+  "loc": "Table 1 note; Sec. 2",
+  "reason": "Counts only for A/B; assignment not stated; C/D are external tests (coded under R) (c)."
+ },
+ "S081": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "We then evaluated it in the other 50% of the",
+  "loc": "Sec. 5",
+  "reason": "50/50 within each video dataset; unit and assignment not stated (c)."
+ },
+ "S088": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "segmented into train, validation, and test splits in a 70-15-15",
+  "loc": "Fine-tuning dataset",
+  "reason": "Ambiguous whether videos or frames within each video were assigned; no clear assignment rule (c)."
+ },
+ "S097": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "This dataset was divided into three parts: a training set (80%), a test set (10%) and a validation set (10%).",
+  "loc": "Sec. 2 (Dataset), Table 1",
+  "reason": "FishTrac re-split 80/10/10 per environment; assignment not stated (c)."
+ },
+ "S098": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": false,
+  "quote": "was randomly divided into train-set, valid-set, and test-set in an 8:1:1 ratio",
+  "loc": "Datasets",
+  "reason": "Stated random 8:1:1 split of Brackish (Roboflow); no leakage handling (b)."
+ },
+ "S102": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "The dataset is split into a trainval partition composed of 4,173",
+  "loc": "Sec. 3.3",
+  "reason": "90/10 trainval/test by counts only (5-fold CV only for hyperparameters); assignment not stated (c)."
+ },
+ "U014": {
+  "D1": "사이트/서식지",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "Y",
+  "changed": false,
+  "quote": "not included in the training and in the validation sets, as well as",
+  "loc": "Sec. 4.1.2",
+  "reason": "Test set excludes training scenarios (Muksit test set) plus independent MiviaFish set -> scenario/site-level separation (d)."
+ },
+ "U034": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": true,
+  "quote": "We partitioned the images using an 85%–15% ratio, resulting in 1500 images for the training set and 265 images for the test set.",
+  "loc": "Sec. 5",
+  "reason": "OzFish split by ratio only; assignment not stated (c)."
+ },
+ "U043": {
+  "D1": "NR",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "NR",
+  "changed": false,
+  "quote": "The DeepFish dataset was partitioned into training and",
+  "loc": "Sec. III",
+  "reason": "Own 80/20 re-split of DeepFish; ratio only (c)."
+ },
+ "U061": {
+  "D1": "이미지/프레임 무작위",
+  "D3": "NR",
+  "D4": "N",
+  "D_ALL": "N",
+  "changed": false,
+  "quote": "dataset was randomly divided into three distinct sets, encompassing 10% for validation, 20% for testing, and 70% for training.",
+  "loc": "Sec. IV",
+  "reason": "Own stated random 70/10/20 split; no leakage handling (b)."
+ }
+}
