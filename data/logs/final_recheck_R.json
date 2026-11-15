@@ -1,0 +1,218 @@
+{
+ "N043": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "source (39.7%, 40.2%) and target domains (24.4%, 24.2%)",
+  "loc": "Abstract; Sec. 4.4, Tables 1-2",
+  "reason": "Same CAM-RCNN trained on 2019 source data evaluated on source test and completely unseen 2022 target test; mask/bbox AP reported for both."
+ },
+ "N054": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "Compared to the internal validation results shown in Table 3, the overall Precision decreased by 6.2% to 88.9%",
+  "loc": "Sec. 3.2; Tables 3-4",
+  "reason": "Same YOLOv8n evaluated on validation data and July inference day; Precision/Recall/F1/mAP reported for both. (Note: ~2% of inference-day images were in training.)"
+ },
+ "N091": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "In L-pre, performance dropped dramatically (mAP@0.5 6.07%).",
+  "loc": "Sec. IV.A.4; Tables III, V (D0 mAP@0.5 96.15%)",
+  "reason": "L-pre is the DeepFish-trained model applied without retraining; mAP@0.5 reported on DeepFish test (96.15%) and Sabang local test (6.07%)."
+ },
+ "N093": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "Remarkably, M4 FT achieves exceptional zero-shot performance on the CDFW sequence, recording a HOTA of 74.2",
+  "loc": "Sec. IV.E.2; Table VII vs Table I (BrackishMOT HOTA 29.2)",
+  "reason": "Same BrackishMOT-trained M4FT evaluated zero-shot on FishTrack23/MFT22; HOTA reported in-domain and external."
+ },
+ "Q033": {
+  "R1": "Y",
+  "R3": "N",
+  "R_ALL": "P",
+  "changed": true,
+  "quote": "The re-trained FgSegNet model has a slightly better performance (0.109) than pre-trained model",
+  "loc": "Sec. IV (Results)",
+  "reason": "Pre-trained vs re-trained FgSegNet are different models, both only on SmartBay; only in-domain value is CDnet F-measure 0.984 cited from another paper (different metric)."
+ },
+ "Q056": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "Through experimental tests, the recognition accuracy rate dropped by 1.5% to 2.3% in other sea areas.",
+  "loc": "Sec. 5 Discussion",
+  "reason": "Same FSTA weights applied to other sea areas (authors say retraining would be needed); change in the same accuracy metric reported numerically."
+ },
+ "Q060": {
+  "R1": "Y",
+  "R3": "N",
+  "R_ALL": "P",
+  "changed": true,
+  "quote": "The training and validation has been done with the dataset presented in Table 2, in which the test data is integrated as part of the training data.",
+  "loc": "Table 9 caption; Sec. 4.2 vs Table 4",
+  "reason": "THEMO results come from models retrained on train+test (3 new runs), not the Table 4 models; the retrained models have no in-domain test value."
+ },
+ "Q129": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "It was not re-trained with manually labeled IRWA frames",
+  "loc": "Sec. V; Table I (SUIM-Net F-score 81.25 Seagrass vs 31.65 IRWA)",
+  "reason": "Same Seagrass-fine-tuned SUIM-Net evaluated on Seagrass and IRWA with F-score and mIoU."
+ },
+ "Q178": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "the labrids saw the largest drop in performance in the test set, with an overall F1 score of 0.348",
+  "loc": "Sec. 3.2.2; Table 4 (validation F1 vs test-set F1)",
+  "reason": "Same YOLOv9c models report validation F1 and F1 on the test set from more recent survey rounds/new conditions."
+ },
+ "S022": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "Given that OFDNet has been trained on good condition aquarium data that do not include such harsh real-world conditions, it obtains a 0.21 mAP",
+  "loc": "Sec. V; Sec. III (aquarium mAP 0.55)",
+  "reason": "Same aquarium-trained OFDNet: mAP 0.55 on aquarium evaluation set vs 0.21 on in-situ sea data, before retraining."
+ },
+ "S029": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "our trained model is indeed not generalized enough to correctly label Igiugig dataset if not trained on Igiugig data, with testing mAP score as 0.0055",
+  "loc": "Sec. IV.B; Table III",
+  "reason": "Experiment II model (Voith+Wells only) reports mAP 0.5714/0.5659 in-domain and 0.0055 on Igiugig. Old evidence compared different models; rating unchanged."
+ },
+ "S032": {
+  "R1": "Y",
+  "R3": "N",
+  "R_ALL": "P",
+  "changed": true,
+  "quote": "YOLOv3 Open Images 0.0022 0.0035",
+  "loc": "Table 3; Sec. 5.2",
+  "reason": "Only cross-domain model is off-the-shelf Open Images YOLOv3, tested only on Brackish; it is compared with fine-tuned models (different models). No in-domain value for it."
+ },
+ "S036": {
+  "R1": "Y",
+  "R3": "N",
+  "R_ALL": "P",
+  "changed": true,
+  "quote": "training using the 1605 images of dataset 1, and then testing on the 200 annotated images of dataset 2",
+  "loc": "Results, Experiment 1; Tables 1-2",
+  "reason": "Experiment-1 model reports results on dataset 2 only; no dataset-1 test value. Experiment 2 is a different model trained on both datasets."
+ },
+ "S055": {
+  "R1": "Y",
+  "R3": "N",
+  "R_ALL": "P",
+  "changed": true,
+  "quote": "The SL located 89% of available shark frames (n = 2,277 frames) and the SI filtered out false-positive images with 94% specificity",
+  "loc": "Sec. 3.2, Table 2; Fig. 4e",
+  "reason": "In-domain performance is test accuracy per component (Fig. 4e); BRUV/YouTube results are recall/specificity (Table 2). No same-model, same-metric in-domain vs external pair."
+ },
+ "S059": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "OzFish BRUVS 507 species BB Fish-only FALSE 0.898 0.699 0.786",
+  "loc": "Table 2; Methods 2.4.2",
+  "reason": "Same fish-only detector: recall 0.699 on OzFish test and 0.701/0.885/0.786/0.700 on out-of-sample datasets."
+ },
+ "S060": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "Removing the data gathered in December, the mean accuracy rises from 72.6% to 88.8%",
+  "loc": "Results Exp. 2; Fig. 5",
+  "reason": "Same ResNet18 trained on first four months; monthly accuracy reported for all months (Fig. 5), including season and December camera change."
+ },
+ "S063": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "the mAP50 rising 25.45% from 48.60% to 74.05%",
+  "loc": "Sec. 6, Table 2; Table 1 (OzFish 68.46%)",
+  "reason": "OzFish-trained YOLOv4: mAP50 68.46% on OzFish (Table 1) vs 48.60% on CCMAR biologist-annotated images (Table 2)."
+ },
+ "S064": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "test sets C and D were obtained from different areas and backgrounds",
+  "loc": "Table 1 note; Table 4",
+  "reason": "Each trained YOLO scenario reports mAP@0.5 on in-domain test sets A/B and external C (other camera) and D (OBSEA)."
+ },
+ "S079": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "both YOLOv5 and Faster R-CNN [40] +FPN [49] exhibit a noticeable decrease in object detection performance, with a maximum decrease of 5% in mAPIoU = 0.5",
+  "loc": "Sec. 3.x, Fig. 9",
+  "reason": "Same models trained on November 2020 frames tested on later months; change in mAP@0.5 reported."
+ },
+ "S088": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "All the trained models are tested on the Brackish dataset, the dataset not exposed to the model during training.",
+  "loc": "Fig. 4 caption; Tables 4 and 6",
+  "reason": "Same fine-tuned models report mAP on custom test set (Table 4) and Brackish OOD set (Table 6)."
+ },
+ "S091": {
+  "R1": "Y",
+  "R3": "N",
+  "R_ALL": "P",
+  "changed": true,
+  "quote": "DeepFins achieved a 90.0% F1 Score on the OzFish dataset",
+  "loc": "Sec. 2.3.1",
+  "reason": "In-domain F1 is cited from Jalal et al. (another paper); this study reports only Sardinian-frame metrics for DeepFins/DeepEcomar."
+ },
+ "S095": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "Evaluation of model trained on Ozfish training set and tested on LifeCLEF 2015 test set and vice versa.",
+  "loc": "Table 2; Sec. 4.1 (OzFish test F1 90.0)",
+  "reason": "Same OzFish-trained DeepFins: F1 90.0 on OzFish test vs 80.2 on LifeCLEF 2015."
+ },
+ "S102": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "Performance comparison of generic fish segmentation large model evaluated on our dataset versus the DeepFish dataset.",
+  "loc": "Table 5",
+  "reason": "Same single-class large model: mAP50(B/M) 0.915/0.920 on own dataset vs 0.917/0.919 on DeepFish."
+ },
+ "S106": {
+  "R1": "Y",
+  "R3": "Y",
+  "R_ALL": "Y",
+  "changed": false,
+  "quote": "YOLOv11 Models trained on river-specific data performed best when applied to their corresponding river",
+  "loc": "Results, Table 1",
+  "reason": "Each river-specific model reports mAPtest on its own river and on the other two rivers."
+ }
+}

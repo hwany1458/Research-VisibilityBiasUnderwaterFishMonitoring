@@ -2117,7 +2117,7 @@
   "field": "R3",
   "old": "Y",
   "new": "N",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "The re-trained FgSegNet model has a slightly better performance (0.109) than pre-trained model",
   "loc": "Sec. IV (Results)",
   "reason": "Pre-trained vs re-trained FgSegNet are different models, both only on SmartBay; only in-domain value is CDnet F-measure 0.984 cited from another paper (different metric)."
@@ -2127,7 +2127,7 @@
   "field": "R_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "The re-trained FgSegNet model has a slightly better performance (0.109) than pre-trained model",
   "loc": "Sec. IV (Results)",
   "reason": "Pre-trained vs re-trained FgSegNet are different models, both only on SmartBay; only in-domain value is CDnet F-measure 0.984 cited from another paper (different metric)."
@@ -2137,7 +2137,7 @@
   "field": "R3",
   "old": "Y",
   "new": "N",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "The training and validation has been done with the dataset presented in Table 2, in which the test data is integrated as part of the training data.",
   "loc": "Table 9 caption; Sec. 4.2 vs Table 4",
   "reason": "THEMO results come from models retrained on train+test (3 new runs), not the Table 4 models; the retrained models have no in-domain test value."
@@ -2147,7 +2147,7 @@
   "field": "R_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "The training and validation has been done with the dataset presented in Table 2, in which the test data is integrated as part of the training data.",
   "loc": "Table 9 caption; Sec. 4.2 vs Table 4",
   "reason": "THEMO results come from models retrained on train+test (3 new runs), not the Table 4 models; the retrained models have no in-domain test value."
@@ -2157,7 +2157,7 @@
   "field": "R3",
   "old": "Y",
   "new": "N",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "YOLOv3 Open Images 0.0022 0.0035",
   "loc": "Table 3; Sec. 5.2",
   "reason": "Only cross-domain model is off-the-shelf Open Images YOLOv3, tested only on Brackish; it is compared with fine-tuned models (different models). No in-domain value for it."
@@ -2167,7 +2167,7 @@
   "field": "R_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "YOLOv3 Open Images 0.0022 0.0035",
   "loc": "Table 3; Sec. 5.2",
   "reason": "Only cross-domain model is off-the-shelf Open Images YOLOv3, tested only on Brackish; it is compared with fine-tuned models (different models). No in-domain value for it."
@@ -2177,7 +2177,7 @@
   "field": "R3",
   "old": "Y",
   "new": "N",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "training using the 1605 images of dataset 1, and then testing on the 200 annotated images of dataset 2",
   "loc": "Results, Experiment 1; Tables 1-2",
   "reason": "Experiment-1 model reports results on dataset 2 only; no dataset-1 test value. Experiment 2 is a different model trained on both datasets."
@@ -2187,7 +2187,7 @@
   "field": "R_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "training using the 1605 images of dataset 1, and then testing on the 200 annotated images of dataset 2",
   "loc": "Results, Experiment 1; Tables 1-2",
   "reason": "Experiment-1 model reports results on dataset 2 only; no dataset-1 test value. Experiment 2 is a different model trained on both datasets."
@@ -2197,7 +2197,7 @@
   "field": "R3",
   "old": "Y",
   "new": "N",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "The SL located 89% of available shark frames (n = 2,277 frames) and the SI filtered out false-positive images with 94% specificity",
   "loc": "Sec. 3.2, Table 2; Fig. 4e",
   "reason": "In-domain performance is test accuracy per component (Fig. 4e); BRUV/YouTube results are recall/specificity (Table 2). No same-model, same-metric in-domain vs external pair."
@@ -2207,7 +2207,7 @@
   "field": "R_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "The SL located 89% of available shark frames (n = 2,277 frames) and the SI filtered out false-positive images with 94% specificity",
   "loc": "Sec. 3.2, Table 2; Fig. 4e",
   "reason": "In-domain performance is test accuracy per component (Fig. 4e); BRUV/YouTube results are recall/specificity (Table 2). No same-model, same-metric in-domain vs external pair."
@@ -2217,7 +2217,7 @@
   "field": "R3",
   "old": "Y",
   "new": "N",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "DeepFins achieved a 90.0% F1 Score on the OzFish dataset",
   "loc": "Sec. 2.3.1",
   "reason": "In-domain F1 is cited from Jalal et al. (another paper); this study reports only Sardinian-frame metrics for DeepFins/DeepEcomar."
@@ -2227,7 +2227,7 @@
   "field": "R_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: R same-model rule",
+  "source": "Final recheck: R same-model rule",
   "quote": "DeepFins achieved a 90.0% F1 Score on the OzFish dataset",
   "loc": "Sec. 2.3.1",
   "reason": "In-domain F1 is cited from Jalal et al. (another paper); this study reports only Sardinian-frame metrics for DeepFins/DeepEcomar."
@@ -2237,7 +2237,7 @@
   "field": "C5",
   "old": "검증 표본 오탐률",
   "new": "없음",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "The detection threshold is set to be -0.5. Only the objects with DPM score higher than -0.5 can be detected.",
   "loc": "Sec. IV.A; Tables I-II",
   "reason": "Threshold given with a recall rationale only. Table I tracklet confusion matrix and counting errors are scored against ground truth of the test clips (standard metrics). No human verification of outputs, no duplicate mechanism."
@@ -2247,7 +2247,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "N",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "The detection threshold is set to be -0.5. Only the objects with DPM score higher than -0.5 can be detected.",
   "loc": "Sec. IV.A; Tables I-II",
   "reason": "Threshold given with a recall rationale only. Table I tracklet confusion matrix and counting errors are scored against ground truth of the test clips (standard metrics). No human verification of outputs, no duplicate mechanism."
@@ -2257,7 +2257,7 @@
   "field": "C_ALL",
   "old": "P",
   "new": "Y",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "The precision and recall values were obtained from 300 randomly selected segmented images.",
   "loc": "Sec. IV-A; Table I",
   "reason": "Random sample of the system's segmentation outputs from field transect videos checked by humans, giving precision 0.71 (FP share). No score threshold."
@@ -2267,7 +2267,7 @@
   "field": "C_ALL",
   "old": "P",
   "new": "Y",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "A manual control by the do- main expert Uwe Friedrich confirmed that 5 098 of",
   "loc": "Sec. 4.2 / 6; Table 2",
   "reason": "Expert checked all 5,235 system-positive videos from 307,114 unlabelled field videos and reported precision 97.38% (137 FP). No score threshold."
@@ -2277,7 +2277,7 @@
   "field": "C_ALL",
   "old": "P",
   "new": "Y",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "We developed our marked evaluation datasets using results from a preliminary run of the YOLO-based neural network that were marked by trained experts and volunteers",
   "loc": "Methods (evaluation dataset); Table 3",
   "reason": "Model-identified field frames verified by experts/volunteers, with FP counted (Table 3). Frame extraction by residence rate to avoid overcounting. No score threshold."
@@ -2287,7 +2287,7 @@
   "field": "C5",
   "old": "검증 표본 오탐률",
   "new": "없음",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "detections for these species were manually curated and checked.",
   "loc": "Sec. 2.3 (p.6-7)",
   "reason": "Per-species thresholds described, but no values in the main text. Rare-species detections curated without an FP count/rate. No duplicate mechanism, so NR (was P)."
@@ -2297,7 +2297,7 @@
   "field": "C_ALL",
   "old": "P",
   "new": "NR",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "detections for these species were manually curated and checked.",
   "loc": "Sec. 2.3 (p.6-7)",
   "reason": "Per-species thresholds described, but no values in the main text. Rare-species detections curated without an FP count/rate. No duplicate mechanism, so NR (was P)."
@@ -2307,7 +2307,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "A secondary pruning step compares overlaps on top of entire tracks to reduce duplicates.",
   "loc": "Sec. 3 (baselines)",
   "reason": "Explicit duplicate-pruning mechanism; default score 0.5. No human FP verification, so P."
@@ -2317,7 +2317,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "this study established detection thresholds of IoU = 0.3 and score = 0.3",
   "loc": "Sec. 2.4; Table 6",
   "reason": "IDSW measured per test video. Score 0.3 unexplained. The 'manual review' at stations reports accuracy, not FP. Duplicate only, so P."
@@ -2327,7 +2327,7 @@
   "field": "C5",
   "old": "둘 다",
   "new": "중복계수(ID switch) 처리",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "the F1 score for both target species peaked at a confidence threshold of 0.427",
   "loc": "Sec. 2.6; Sec. 3.1; Fig. 3",
   "reason": "Justified threshold. Count corrected for repeated detections. The 300-frame confusion matrix uses human annotations (test metric), not verification of outputs, so duplicate only."
@@ -2337,7 +2337,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "the F1 score for both target species peaked at a confidence threshold of 0.427",
   "loc": "Sec. 2.6; Sec. 3.1; Fig. 3",
   "reason": "Justified threshold. Count corrected for repeated detections. The 300-frame confusion matrix uses human annotations (test metric), not verification of outputs, so duplicate only."
@@ -2347,7 +2347,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "Confusion matrix of manual annotations (rows) and automatic detections (columns) with a score threshold of 0.47",
   "loc": "Table 5; Table 6",
   "reason": "Recurrence (repeated imaging) counts quantified/handled. Confusion matrix vs manual annotations is a standard metric. Duplicate only, so P."
@@ -2357,7 +2357,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "the number of ID Switches dropped signifi- cantly (from 32 to 16)",
   "loc": "Sec. 2.5.3; Sec. 3.1; Table 3",
   "reason": "IDSW measured; threshold 0.25 a default. FP counts are MOT test metrics."
@@ -2367,7 +2367,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "Across 45 test videos, the overall tracking performance achieved was: MOTA of 60.6%, ID switch rate of 1.0%",
   "loc": "Sec. V; Table",
   "reason": "ID-switch rate measured. Threshold 0.5 default, raised ad hoc. Precision is a test-set metric."
@@ -2377,7 +2377,7 @@
   "field": "C5",
   "old": "중복계수(ID switch) 처리",
   "new": "없음",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "certain other configurations produced false positives or overcounts",
   "loc": "Sec. IV.B; Table III",
   "reason": "FP/overcount flagged only as yes/no per model on two test clips; no count or rate. Only standard NMS. No threshold value, so NR (was P). Borderline."
@@ -2387,7 +2387,7 @@
   "field": "C_ALL",
   "old": "P",
   "new": "NR",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "certain other configurations produced false positives or overcounts",
   "loc": "Sec. IV.B; Table III",
   "reason": "FP/overcount flagged only as yes/no per model on two test clips; no count or rate. Only standard NMS. No threshold value, so NR (was P). Borderline."
@@ -2397,7 +2397,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "Although a typical value is 0.5, we lowered it to 0.3 for challenging videos",
   "loc": "Sec. IV; Table II",
   "reason": "IDs measured; GUI merges broken tracks. FP are MOT test metrics."
@@ -2407,7 +2407,7 @@
   "field": "C5",
   "old": "검증 표본 오탐률",
   "new": "없음",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "Throughout testing, confidence threshold was set to 0.05 and the non-maximum suppression (NMS) IoU threshold was 0.4.",
   "loc": "Sec. 2.3.5; Sec. 2.4; S2 Fig",
   "reason": "Threshold chosen by exploratory analysis. The FP error analysis samples FPs defined against test annotations (standard metric). Duplicates are analysed as an error cause, with no handling mechanism."
@@ -2417,7 +2417,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "Throughout testing, confidence threshold was set to 0.05 and the non-maximum suppression (NMS) IoU threshold was 0.4.",
   "loc": "Sec. 2.3.5; Sec. 2.4; S2 Fig",
   "reason": "Threshold chosen by exploratory analysis. The FP error analysis samples FPs defined against test annotations (standard metric). Duplicates are analysed as an error cause, with no handling mechanism."
@@ -2427,7 +2427,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "we found the best performing confidence threshold based on the respective f1 score on the validation set.",
   "loc": "Sec. 2.2; Sec. 3.2",
   "reason": "F1-optimal per-species thresholds. Cluster/heuristic/TCN aggregation turns frame detections into per-video counts to avoid double counting. FP vs expert counts of test videos is a standard metric."
@@ -2437,7 +2437,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "double counting of individuals in sequences with high visual noise",
   "loc": "Sec. 2.5",
   "reason": "ByteTrack plus a minimum 5-frame track rule to reduce double counting. Threshold 0.7 with rationale. No FP verification."
@@ -2447,7 +2447,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "detection score threshold τhigh was set to 0.7, and τlow was set to 0.2.",
   "loc": "Sec. 4.1-4.2; Table 4",
   "reason": "IDs measured and re-ID recovery mechanism. Thresholds set by hyperparameter search. FP are MOT metrics; no field verification."
@@ -2457,7 +2457,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "we used a spatiotemporal ﬁlter called sequen- tial nonmaximum suppression to minimize false detections",
   "loc": "Methods: Abundance Predictions",
   "reason": "Species thresholds chosen to minimise FP/FN, plus Seq-NMS as the stated mechanism. No FP measured on field footage, so not Y. P either way, even if Seq-NMS is not credited."
@@ -2467,7 +2467,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "The number of duplicate images per individual appears to be species dependent.",
   "loc": "Methods; Results; Table 3",
   "reason": "F1-max threshold 0.47. Duplicate imaging quantified against catch. FP on the D3 test set is a standard metric. Duplicate only, so P."
@@ -2477,7 +2477,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "the optimal procedure used Seq-NMS, a confidence threshold of 45%, and a cubic polynomial corrective equation",
   "loc": "Methods; Results; Discussion",
   "reason": "Seq-NMS targets double/triple detections of the same fish, and CTs are swept. No human FP verification of field outputs, so P."
@@ -2487,7 +2487,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "The best performance metrics occurred with Seq-NMS turned on prior to applying conﬁdence thresholds",
   "loc": "Methods; Results; Table 2",
   "reason": "Seq-NMS links detections across frames, and CT 40% maximises F1. FP counts are vs test annotations. Duplicate only, so P."
@@ -2497,7 +2497,7 @@
   "field": "C5",
   "old": "검증 표본 오탐률",
   "new": "없음",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "we considered a predicted MaxN to be true if, for a given species, the predicted number of individuals was consistent across at least 2",
   "loc": "Sec. 2.1-2.2; Table 2",
   "reason": "FP only as test-set precision vs biologist annotations. Semi-automated review reports no FP count. 2-frame persistence is an FP filter (MaxN). No threshold, so NR (was P). Borderline."
@@ -2507,7 +2507,7 @@
   "field": "C_ALL",
   "old": "P",
   "new": "NR",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "we considered a predicted MaxN to be true if, for a given species, the predicted number of individuals was consistent across at least 2",
   "loc": "Sec. 2.1-2.2; Table 2",
   "reason": "FP only as test-set precision vs biologist annotations. Semi-automated review reports no FP count. 2-frame persistence is an FP filter (MaxN). No threshold, so NR (was P). Borderline."
@@ -2517,7 +2517,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "we perform a post-processing step to eliminate potentially erroneous",
   "loc": "Sec. 3.7; Appendix A",
   "reason": "Duplicate-ID merging by IoU overlap. Threshold 0.5 a default. No FP verification, so P."
@@ -2527,7 +2527,7 @@
   "field": "C5",
   "old": "검증 표본 오탐률",
   "new": "없음",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "CNN detected deep water snappers were reviewed and manually",
   "loc": "Sec. 2.3; Results",
   "reason": "The 565 FP come from test-set annotations; expert correction gives no separate FP rate. MaxN-sequence filtering is dataset dedup. No threshold, so NR (was P). Borderline."
@@ -2537,7 +2537,7 @@
   "field": "C_ALL",
   "old": "P",
   "new": "NR",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "CNN detected deep water snappers were reviewed and manually",
   "loc": "Sec. 2.3; Results",
   "reason": "The 565 FP come from test-set annotations; expert correction gives no separate FP rate. MaxN-sequence filtering is dataset dedup. No threshold, so NR (was P). Borderline."
@@ -2547,7 +2547,7 @@
   "field": "C5",
   "old": "중복계수(ID switch) 처리",
   "new": "없음",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "with IoU = 0.5 and confidence threshold (conf) = 0.4, the model",
   "loc": "Sec. 2.4.2; Sec. 2.5",
   "reason": "Unexplained threshold 0.4. DeepSORT chosen for identity, but no ID-switch measure or duplicate rule. No FP verification, so N (was Y)."
@@ -2557,7 +2557,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "N",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "with IoU = 0.5 and confidence threshold (conf) = 0.4, the model",
   "loc": "Sec. 2.4.2; Sec. 2.5",
   "reason": "Unexplained threshold 0.4. DeepSORT chosen for identity, but no ID-switch measure or duplicate rule. No FP verification, so N (was Y)."
@@ -2567,7 +2567,7 @@
   "field": "C5",
   "old": "둘 다",
   "new": "중복계수(ID switch) 처리",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "a sighting event was only retained if it persisted for a minimum duration of 1 s and was supported by detections across at least three distinct frames.",
   "loc": "Sec. 2.3; Table 3",
   "reason": "Detections aggregated into sighting events and expert-corrected tracks; threshold 0.20 with rationale. Tracker precision 0.76 is on test clips; no FP count from expert review. Duplicate only (was 둘 다), so P."
@@ -2577,7 +2577,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "a sighting event was only retained if it persisted for a minimum duration of 1 s and was supported by detections across at least three distinct frames.",
   "loc": "Sec. 2.3; Table 3",
   "reason": "Detections aggregated into sighting events and expert-corrected tracks; threshold 0.20 with rationale. Tracker precision 0.76 is on test clips; no FP count from expert review. Duplicate only (was 둘 다), so P."
@@ -2587,7 +2587,7 @@
   "field": "C_ALL",
   "old": "P",
   "new": "Y",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "1000 of the 3.6 million fish trajectories were manually examined",
   "loc": "Sec. 3 (p.8)",
   "reason": "Manual check of 1,000 system trajectories from the field archive: about 2% false detections, about 25% erroneous trajectories. Outlier cleaning of erroneous trajectories. No score threshold."
@@ -2597,7 +2597,7 @@
   "field": "C_ALL",
   "old": "Y",
   "new": "P",
-  "source": "V7 re-check: C false-positive measurement rule",
+  "source": "Final recheck: C false-positive measurement rule",
   "quote": "Linking connects short trajectory segments to a long trajectory.",
   "loc": "Sec. 3.3; Sec. 4.3",
   "reason": "Trajectory linking/deleting is a stated mechanism. Score threshold 0.5 essentially default. FP measured only via test AP, so P."
@@ -2607,7 +2607,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "We used an 80 to 20 ratio for dividing the dataset into training",
   "loc": "Sec. II.B",
   "reason": "Own data; only an 80/20 ratio given, no statement of how images were assigned (c)."
@@ -2617,7 +2617,7 @@
   "field": "D1",
   "old": "사전 정의 공개 split 사용",
   "new": "이미지/프레임 무작위",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "We have removed training images from FishLoc that overlap with FishSeg’s test set for reliable results.",
   "loc": "Experiments (Dataset)",
   "reason": "Uses DeepFish FishLoc/FishSeg provider splits (1600/640/960; 310/124/186) -> inherit random image within habitat; train/test overlap explicitly removed -> P (a)."
@@ -2627,7 +2627,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "P",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "We have removed training images from FishLoc that overlap with FishSeg’s test set for reliable results.",
   "loc": "Experiments (Dataset)",
   "reason": "Uses DeepFish FishLoc/FishSeg provider splits (1600/640/960; 310/124/186) -> inherit random image within habitat; train/test overlap explicitly removed -> P (a)."
@@ -2637,7 +2637,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "Our model was trained on a sample of 10,727 images sorted by our team of trained volunteers",
   "loc": "Methods, Training and validation",
   "reason": "Only counts of training (10,727) and validation (2,702) images; assignment not stated (c)."
@@ -2647,7 +2647,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "Among these, around 2180 frames are used as training frames and 1020 frames are subjected to testing.",
   "loc": "Sec. 3.1 Dataset Details",
   "reason": "Only frame counts for UWA; no split stated for other datasets; assignment not stated (c)."
@@ -2657,7 +2657,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "k-fold(이미지)",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "a 5-Fold Cross-Validation within the training/ validation part of the dataset has been used for the evaluation of the classification performance",
   "loc": "Sec. 2.2 / Table 1",
   "reason": "Headline AP includes 5-fold CV over annotated frames; test split counts only; k-fold over images, no leakage handling (b)."
@@ -2667,7 +2667,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "N",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "a 5-Fold Cross-Validation within the training/ validation part of the dataset has been used for the evaluation of the classification performance",
   "loc": "Sec. 2.2 / Table 1",
   "reason": "Headline AP includes 5-fold CV over annotated frames; test split counts only; k-fold over images, no leakage handling (b)."
@@ -2677,7 +2677,7 @@
   "field": "D1",
   "old": "사전 정의 공개 split 사용",
   "new": "이미지/프레임 무작위",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The data splits of both datasets were defined by the dataset providers.",
   "loc": "Sec. 4.1-4.2",
   "reason": "Provider splits used; DeepFish FishSeg -> inherit random image within habitat (SUIM provider split unit undocumented); no leakage handling (a)."
@@ -2687,7 +2687,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "N",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The data splits of both datasets were defined by the dataset providers.",
   "loc": "Sec. 4.1-4.2",
   "reason": "Provider splits used; DeepFish FishSeg -> inherit random image within habitat (SUIM provider split unit undocumented); no leakage handling (a)."
@@ -2697,7 +2697,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "사전 정의 공개 split 사용",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "All evaluation metrics are generated on the test set of the dataset presented in [14].",
   "loc": "Results; Dataset",
   "reason": "Uses the predefined test set of the McIntosh et al. clip dataset; counts only (100 test/150 val clips), split unit undocumented -> NR."
@@ -2707,7 +2707,7 @@
   "field": "D1",
   "old": "사전 정의 공개 split 사용",
   "new": "이미지/프레임 무작위",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The FishSeg data split can be given as training (3 1 0), validation (1 2 4), and testing",
   "loc": "Sec. 4.1 Datasets",
   "reason": "Same splits as prior work / database providers (DeepFish FishSeg 310/124/186, SUIM, Large-scale) -> inherit DeepFish random image; no leakage handling (a)."
@@ -2717,7 +2717,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "N",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The FishSeg data split can be given as training (3 1 0), validation (1 2 4), and testing",
   "loc": "Sec. 4.1 Datasets",
   "reason": "Same splits as prior work / database providers (DeepFish FishSeg 310/124/186, SUIM, Large-scale) -> inherit DeepFish random image; no leakage handling (a)."
@@ -2727,7 +2727,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "divided into three subsets with 1280/272/272 images for the training/validation/testing, respectively.",
   "loc": "Sec. II (Dataset), Table 1",
   "reason": "Own relabelled compilation; counts only, assignment not stated (c)."
@@ -2737,7 +2737,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "there are 409 images and 103 images from source domain used",
   "loc": "Sec. 4.1 Dataset",
   "reason": "Source-domain split given as counts only; target domain is a separate deployment (external test, coded under R) (c)."
@@ -2747,7 +2747,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "k-fold(이미지)",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "A five-fold experiment is performed and averaged for results.",
   "loc": "Sec. IV (Experiments); Abstract",
   "reason": "Own Brackish 70:20:10 split with stated five-fold cross-validation over frames; no leakage handling (b)."
@@ -2757,7 +2757,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "N",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "A five-fold experiment is performed and averaged for results.",
   "loc": "Sec. IV (Experiments); Abstract",
   "reason": "Own Brackish 70:20:10 split with stated five-fold cross-validation over frames; no leakage handling (b)."
@@ -2767,7 +2767,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "a total of 3262 training images, 818 validation images, and 650 test images",
   "loc": "Sec. 3.2",
   "reason": "Own data; counts only, assignment of images to sets not stated (c)."
@@ -2777,7 +2777,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "divided into 1199 images for training (80%), 199 images for validation (13%) and 102 images for testing (7%).",
   "loc": "Sec. II.A Dataset",
   "reason": "Counts/percentages only; assignment not stated (c)."
@@ -2787,7 +2787,7 @@
   "field": "D1",
   "old": "사전 정의 공개 split 사용",
   "new": "이미지/프레임 무작위",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The dataset is intentionally partitioned into 310 training images, 124 validation images, and 186 testing images.",
   "loc": "Sec. III.D",
   "reason": "DeepFish FishSeg provider partition (310/124/186) -> inherit random image within habitat; SUIM provider test set; no leakage handling (a)."
@@ -2797,7 +2797,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "N",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The dataset is intentionally partitioned into 310 training images, 124 validation images, and 186 testing images.",
   "loc": "Sec. III.D",
   "reason": "DeepFish FishSeg provider partition (310/124/186) -> inherit random image within habitat; SUIM provider test set; no leakage handling (a)."
@@ -2807,7 +2807,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "the dataset was split into training, validation, and test subsets using a ratio of 6:1:3, respectively.",
   "loc": "Sec. 2.1-2.2",
   "reason": "Own drone-video frames; ratio only, assignment not stated (c)."
@@ -2817,7 +2817,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "N",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "the whole data set was divided into three equal subsets, in which one of the subsets was applied once as a validation set",
   "loc": "Sec. III (Training)",
   "reason": "Own 3-fold cross-validation over DeepFish images; no leakage handling (b)."
@@ -2827,7 +2827,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "N",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "Each composite dataset was partitioned into five equal folds.",
   "loc": "Sec. III (Training)",
   "reason": "Stated 5-fold CV over images within each composite dataset; no leakage handling (b)."
@@ -2837,7 +2837,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The DeepFish dataset includes 909 images used for testing.",
   "loc": "Sec. III.A Dataset",
   "reason": "DeepFish test set from prior curated version (not provider split) and local 70/15/15 ratio; assignment not stated. Video splits only recommended as future work (c)."
@@ -2847,7 +2847,7 @@
   "field": "D_ALL",
   "old": "P",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The DeepFish dataset includes 909 images used for testing.",
   "loc": "Sec. III.A Dataset",
   "reason": "DeepFish test set from prior curated version (not provider split) and local 70/15/15 ratio; assignment not stated. Video splits only recommended as future work (c)."
@@ -2857,7 +2857,7 @@
   "field": "D1",
   "old": "사전 정의 공개 split 사용",
   "new": "영상(video)",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "Tracklet samples of M4 FT, ByteTrack, and OC-SORT on BrackishMOT test sequences.",
   "loc": "Sec. IV.A; Fig. 9",
   "reason": "Uses BrackishMOT predefined training/test sets, which are whole sequences (98 sequences, sequence-level split) (a/d)."
@@ -2867,7 +2867,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "Y",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "Tracklet samples of M4 FT, ByteTrack, and OC-SORT on BrackishMOT test sequences.",
   "loc": "Sec. IV.A; Fig. 9",
   "reason": "Uses BrackishMOT predefined training/test sets, which are whole sequences (98 sequences, sequence-level split) (a/d)."
@@ -2877,7 +2877,7 @@
   "field": "D1",
   "old": "사전 정의 공개 split 사용",
   "new": "영상(video)",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The class distributions of the predefined training and validation subsets were counted from the annotation files.",
   "loc": "Sec. 3.2",
   "reason": "BrackishMOT predefined train/val (sequence-level); 'No additional random frame-level re-splitting was performed' -> inherit sequence unit (a)."
@@ -2887,7 +2887,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "Y",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The class distributions of the predefined training and validation subsets were counted from the annotation files.",
   "loc": "Sec. 3.2",
   "reason": "BrackishMOT predefined train/val (sequence-level); 'No additional random frame-level re-splitting was performed' -> inherit sequence unit (a)."
@@ -2897,7 +2897,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "the dataset split into 80% training, 10% testing, and 10% validation.",
   "loc": "Sec. 3 (Experimental settings)",
   "reason": "FishTrack frames re-split 80/10/10 by the authors; ratio only, assignment not stated (c)."
@@ -2907,7 +2907,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "N",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "In our evaluation, the standard 10-folds cross-validation",
   "loc": "Sec. IV (Evaluation)",
   "reason": "Stated 10-fold cross-validation over cropped fish images; no leakage handling (b)."
@@ -2917,7 +2917,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "the applicable data set was divided into 70% training images, 15% validation images and 15% testing images.",
   "loc": "Sec. 2.3",
   "reason": "Percentages only; assignment of images not stated (c)."
@@ -2927,7 +2927,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "10% of all images are separated for validation.",
   "loc": "Sec. II.B DeepFish dataset",
   "reason": "Own 90/10 re-split of DeepFish segmentation images, not the provider split; ratio only (c)."
@@ -2937,7 +2937,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "divided into two sets: 80% of the data as the training dataset and the remaining 20% as the validation dataset.",
   "loc": "Sec. III",
   "reason": "Percentages only; assignment not stated (c)."
@@ -2947,7 +2947,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The training of our ERT models has been performed using 270 of these image patches and the rest of them have been used for testing.",
   "loc": "Sec. 3.1",
   "reason": "Counts only; assignment of patches not stated (c)."
@@ -2957,7 +2957,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "Following a ratio of 7:1:2, we divided the images into training sets, validation sets, and testing sets.",
   "loc": "Sec. 4.1",
   "reason": "Ratio only; assignment not stated; public datasets without stated split (c)."
@@ -2967,7 +2967,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "remaining 110 images as the test set.",
   "loc": "Sec. IV.A",
   "reason": "Own DeepFish subset (1183 images); counts only (960/113/110), assignment not stated (c)."
@@ -2977,7 +2977,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The labeled images are divided into the training set and validation set at a ratio of 5:1.",
   "loc": "Sec. IV.A",
   "reason": "Ratio only; assignment not stated (c)."
@@ -2987,7 +2987,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "We used K = 5 different partitions of the dataset",
   "loc": "Sec. 2 (Model training)",
   "reason": "60/20/20 proportions over 5 partitions; how images were assigned not stated (not k-fold) (c)."
@@ -2997,7 +2997,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "for training and 909 images (3,029 instances) for evaluation.",
   "loc": "Sec. IV.A.1",
   "reason": "Own curated DeepFish detection subset (not provider split); counts only (c)."
@@ -3007,7 +3007,7 @@
   "field": "D1",
   "old": "사전 정의 공개 split 사용",
   "new": "이미지/프레임 무작위",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The whole dataset is already divided into three non-overlapping sets namely, train, validation, and tests in ratio 80/10/10.",
   "loc": "Sec. 4.1",
   "reason": "Brackish predefined split -> inherit random frame split; disjoint sets only, no leakage handling -> N (a)."
@@ -3017,7 +3017,7 @@
   "field": "D_ALL",
   "old": "P",
   "new": "N",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The whole dataset is already divided into three non-overlapping sets namely, train, validation, and tests in ratio 80/10/10.",
   "loc": "Sec. 4.1",
   "reason": "Brackish predefined split -> inherit random frame split; disjoint sets only, no leakage handling -> N (a)."
@@ -3027,7 +3027,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "split ratios of 80%, 10%, and 10%, respectively.",
   "loc": "Sec. IV.A (Dataset)",
   "reason": "PLRD split by ratio only; Brackish used for transfer without stated split (c)."
@@ -3037,7 +3037,7 @@
   "field": "D_ALL",
   "old": "NR",
   "new": "N",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "10-fold cross-validation is applied, and the final classifier is",
   "loc": "Sec. VI.C-D",
   "reason": "Stated 10-fold CV over fish images (F4K, NOAA); no leakage handling (b)."
@@ -3047,7 +3047,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "we divided them into two groups; 829 images for training and",
   "loc": "Sec. II/III",
   "reason": "Counts only (829/100); assignment not stated (c)."
@@ -3057,7 +3057,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "we tested our network on a test dataset",
   "loc": "Methods (Training datasets)",
   "reason": "Synthetic training from 10-70 crops; 2400 real test images; how real images were assigned to crop source vs test not stated (c)."
@@ -3067,7 +3067,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "%50 eğitim ve %50 test oranlarında bir kez bölünmüştür.",
   "loc": "Sec. III",
   "reason": "Frames randomly sampled from videos, but train/test division given only as ratios (80/20, 50/50) (c)."
@@ -3077,7 +3077,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "A and B datasets were split into training, validation and test sets.",
   "loc": "Table 1 note; Sec. 2",
   "reason": "Counts only for A/B; assignment not stated; C/D are external tests (coded under R) (c)."
@@ -3087,7 +3087,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "This dataset was divided into three parts: a training set (80%), a test set (10%) and a validation set (10%).",
   "loc": "Sec. 2 (Dataset), Table 1",
   "reason": "FishTrac re-split 80/10/10 per environment; assignment not stated (c)."
@@ -3097,7 +3097,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "The dataset is split into a trainval partition composed of 4,173",
   "loc": "Sec. 3.3",
   "reason": "90/10 trainval/test by counts only (5-fold CV only for hyperparameters); assignment not stated (c)."
@@ -3107,7 +3107,7 @@
   "field": "D1",
   "old": "이미지/프레임 무작위",
   "new": "NR",
-  "source": "V7 re-check: D provider-split and consistency rule",
+  "source": "Final recheck: D provider-split and consistency rule",
   "quote": "We partitioned the images using an 85%–15% ratio, resulting in 1500 images for the training set and 265 images for the test set.",
   "loc": "Sec. 5",
   "reason": "OzFish split by ratio only; assignment not stated (c)."
@@ -3117,7 +3117,7 @@
   "field": "V6",
   "old": "Y",
   "new": "P",
-  "source": "V7 consistency: classes assigned by eye are not measured visibility",
+  "source": "Final recheck (consistency): classes assigned by eye are not measured visibility",
   "quote": null,
   "loc": null,
   "reason": "Four turbidity classes scored by eye; V6 = Y requires a measured variable."
@@ -3127,7 +3127,7 @@
   "field": "E3",
   "old": "점 보정",
   "new": "2단계 설계 추정",
-  "source": "V7 consistency: E3 category",
+  "source": "Final recheck (consistency): E3 category",
   "quote": null,
   "loc": null,
   "reason": "DISCount is a design-based two-phase estimator using human review of a probability subsample, with confidence intervals; not a fixed point correction."
@@ -3137,7 +3137,7 @@
   "field": "(record)",
   "old": null,
   "new": "included",
-  "source": "V7: peer-reviewed version found (Ecological Informatics 2026); charted in two independent runs and adjudicated",
+  "source": "Final recheck: peer-reviewed version found (Ecological Informatics 2026); charted in two independent runs and adjudicated",
   "reason": "Excluded at screening as a preprint; journal version published online 18 March 2026, before the search date."
  }
 ]

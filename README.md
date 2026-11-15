@@ -12,7 +12,7 @@ It lets readers check every count in the paper against the coded data, see the e
 |---|---|
 | `data/coded_studies/` | Final coding of the 183 included studies, one JSON file per study (64 fields; overall ratings `V_ALL`, `D_ALL`, `R_ALL`, `C_ALL`, `E_ALL` with verbatim supporting quotations in `*_EV`). |
 | `data/coding_runs/run1`, `run2` | The two separate coding runs of the language model for each study, before adjudication. |
-| `data/logs/` | `corrections_log.json` (every change made after the coding runs: adjudication, human verification, systematic sweep, and the revision re-check, each with its reason and quotation); `human_model_agreement.json` (human vs model agreement on 12 items for the 55-study verification sample); `v7_R.json`, `v7_C.json`, `v7_D.json` (re-check decisions made during revision); `data_source_classification.json`. |
+| `data/logs/` | `corrections_log.json` (every change made after the coding runs: adjudication, human verification, systematic sweep, and the final recheck before submission, each with its reason and quotation); `human_model_agreement.json` (human vs model agreement on 12 items for the 55-study verification sample); `final_recheck_R.json`, `final_recheck_C.json`, `final_recheck_D.json` (decisions of the final recheck before submission); `data_source_classification.json`. |
 | `prompts/` | Every prompt given to the language model (Supplementary Table S6), and `glossary_korean_values.json`, which translates the coded values written in Korean. |
 | `tables/` | Supplementary Tables S1–S6 as Excel workbooks. |
 | `scripts/` | `compute_stats.py` (all counts reported in Section 5), `mrcuai.py` (checklist items, Table 7 and Table S4), `figures_4_5.py` (Figures 4 and 5, SVG). |
