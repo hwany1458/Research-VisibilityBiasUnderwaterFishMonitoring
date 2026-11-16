@@ -17,14 +17,14 @@ Two independent coders disagreed on some overall ratings. You are the adjudicato
    - D4 = Y requires explicit discussion of leakage/near-duplicates between train and test.
 3. R (external):
    - Policy P2 applies: different site/estuary/day within the same campaign or dataset is NOT external.
-   - Different season or year at the same site IS external (counts as "계절/시기").
+   - Different season or year at the same site IS external (counts as "Season/period").
    - Two datasets from the same camera network/campaign (e.g., LifeCLEF 2014 and 2015, both Fish4Knowledge Taiwan) are NOT external to each other.
    - R1 = Y if ANY model evaluated in the paper (including off-the-shelf models trained elsewhere) is tested outside its training domain with numeric results. R3 = Y if the in-domain vs external performance difference is reported numerically (or both numbers are given).
    - Qualitative-only external demonstration → R1 = Y, R3 = N → R_ALL = P.
 4. E:
-   - Lengths/counts measured by humans from the SAME footage (including stereo measurements by annotators) = "같은 영상의 사람 판독(MaxN 등)". Independent = a reference not derived from the same imagery (diver UVC, catch counts, physical length measurement, tagging/PIT, eDNA, sonar).
-   - A challenge "counting score" computed against expert per-species counts of the same videos = E1 "사람 계수와 비교", E5 "같은 영상의 사람 판독" → E_ALL = P. If the paper reports no counts/ecological quantity at all → E1 = 없음.
-   - A quantity computed but never reported/evaluated (e.g., "lengths can be computed") → E1 = 없음.
+   - Lengths/counts measured by humans from the SAME footage (including stereo measurements by annotators) = "Human reading of the same footage (e.g., MaxN)". Independent = a reference not derived from the same imagery (diver UVC, catch counts, physical length measurement, tagging/PIT, eDNA, sonar).
+   - A challenge "counting score" computed against expert per-species counts of the same videos = E1 "Comparison with human counts", E5 "Human reading of the same footage" → E_ALL = P. If the paper reports no counts/ecological quantity at all → E1 = None.
+   - A quantity computed but never reported/evaluated (e.g., "lengths can be computed") → E1 = None.
 5. V: qualitative statements count only if they describe the study's OWN data conditions (e.g., "our footage was murky"); generic statements in the Introduction about underwater challenges → V1 = NR.
 6. INCL (P4): include only if performance on in-situ underwater imagery is reported. If most imagery is web/aquarium/social-media and in-situ underwater results are not reported separately → INCL = N.
 
